@@ -13,7 +13,9 @@
 - 使用bloom filter多重哈希结构
 - 使用Redis等KEY-VALUE存储系统实现分布式去重
 
-## CentOS7开放端口号
+## LINUX
+
+### CentOS7开放端口号
 
 #### 加入开放端口到配置文件
 
@@ -29,4 +31,10 @@ $ firewall-cmd --zone=public --add-port=80/tcp --permanent
 
 ```shell
 $ firewall-cmd --reload
+```
+
+### 开机启动服务
+
+```shell
+$ chkconfig docker on
 ```
