@@ -67,5 +67,9 @@ $ docker logs -f -t --tail 100 1707a34511f4
 
 ## ElasticSearch
 
+### [Docker下安装ElasticSearch](./markdown/elasticsearch/docker-install-elasticsearch.md)
+
 ### [settings和mappings详解](https://www.cnblogs.com/zlslch/p/6474424.html)
+
+### [索引库设置mappings具体字段类型，禁止自动根据数据格式识别它的类型](https://blog.csdn.net/wfs1994/article/details/80766935)
 
