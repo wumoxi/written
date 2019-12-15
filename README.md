@@ -6,7 +6,11 @@
 
 - [Yii2接入PayPal支付](markdown/pay/yii2_join_up_paypal.md)
 
-## URL去重
+## Golang
+
+### [DOM Selected使用](https://www.flysnow.org/2018/01/20/golang-goquery-examples-selector.html)
+
+### URL去重
 
 - 哈希表
 - 计算MD5等哈希，再存哈希表
