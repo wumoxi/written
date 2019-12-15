@@ -27,7 +27,19 @@
 
 - 对外：REST
 - 模块内部：RPC
+    
 - 模块之间：中间件，REST
+
+## RPC
+- jsonRPC
+- gRPC
+- Thrift
+
+## 中间件
+- RabbitMQ
+- ActiveMQ
+- Kafka
+- Redis
 
 ## 分布式架构VS微服务架构
 
