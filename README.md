@@ -8,7 +8,9 @@
 
 ## Golang
 
-### [DOM Selected使用](https://www.flysnow.org/2018/01/20/golang-goquery-examples-selector.html)
+### [操作HTML文档](https://www.flysnow.org/2018/01/20/golang-goquery-examples-selector.html)
+
+### [分布式系统特点](markdown/golang/featrues-of-distributed-system.md)
 
 ### URL去重
 
