@@ -65,7 +65,7 @@ Entering interactive mode (type "help" for commands, "o" for options)
 
 ### 使用pprof工具查看30秒的CPU配置文件
 
-在命令行输入 `go tool pprof http://localhost:6060/debug/pprof/profile?seconds=30` 然后输入 `web`，它会自动打开浏览器显示30秒的CPU配置文件。
+在命令行输入 `go tool pprof http://localhost:8859/debug/pprof/profile?seconds=30` 紧接着访问`http://localhost:8859` 提供的服务，然后pprof会捕获这30秒内的CPU利用率使用情况，然后输入 `web`，它会自动打开浏览器显示30秒的CPU配置文件。
 
 ```shell
 go tool pprof http://localhost:8859/debug/pprof/profile\?seconds\=30
