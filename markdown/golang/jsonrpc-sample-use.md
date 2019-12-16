@@ -167,3 +167,7 @@ func main() {
 RPC call result: 2.222222
 RPC call error: division by zero
 ```
+
+## 示例代码
+
+[jsonRPC-Sample-Use](/code/golang/rservice)
