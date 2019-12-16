@@ -63,7 +63,7 @@ Entering interactive mode (type "help" for commands, "o" for options)
 ![显示堆配置文件](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191217_8.png)
 
 
-### 查看30秒的CPU配置文件
+### 使用pprof工具查看30秒的CPU配置文件
 
 在命令行输入 `go tool pprof http://localhost:6060/debug/pprof/profile?seconds=30` 然后输入 `web`，它会自动打开浏览器显示30秒的CPU配置文件。
 
