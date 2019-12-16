@@ -10,7 +10,7 @@
 
 ### [HTTP标准库](markdown/golang/http-standard-library.md)
 ### [HTTP服务器的性能分析](markdown/golang/http-server-performance-analysis.md)
-### [操作HTML文档](https://www.flysnow.org/2018/01/20/golang-goquery-examples-selector.html)
+### [HTML文档操作](https://www.flysnow.org/2018/01/20/golang-goquery-examples-selector.html)
 ### [分布式系统特点](markdown/golang/featrues-of-distributed-system.md)
 ### [jsonRPC简单使用](markdown/golang/jsonrpc-sample-use.md)
 
