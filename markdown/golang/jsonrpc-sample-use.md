@@ -116,7 +116,7 @@ Escape character is '^]'.
 {"id":12345,"result":2.5,"error":null}
 ```
 
-### 使用Go客户端进行RPC服务调用(自动调用)
+### 使用RPC客户端进行RPC服务调用(自动调用)
 
 编写调用程序
 
