@@ -42,6 +42,8 @@ func (TestService) Div(args Args, result *float64) error {
 
 ## 注册RPC服务
 
+编写RPC服务端服务程序
+
 ```go
 // server/server.go
 package main
@@ -79,7 +81,7 @@ func main() {
 }
 ```
 
-## 启动RPC服务端服务程序
+启动RPC服务端服务程序
 
 ```shell
 $ go run server/server.go
