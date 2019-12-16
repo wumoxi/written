@@ -4,7 +4,7 @@
 
 ## 支付相关
 
-- [Yii2接入PayPal支付](markdown/pay/yii2_join_up_paypal.md)
+### [Yii2接入PayPal支付](markdown/pay/yii2_join_up_paypal.md)
 
 ## Golang
 
