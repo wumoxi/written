@@ -7,3 +7,8 @@
 ## 线上 [`https://golang.org`](https://golang.org)
 直接通过网络访问官方文档，版本是最新的！
 ![https://golang.org](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191217_10.png)
+
+## [Go语言标准库中文文档](https://studygolang.com/pkgdoc)
+
+![Go语言标准库中文文档](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191217_3.png)
+
