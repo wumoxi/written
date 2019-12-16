@@ -5,8 +5,11 @@
 ```shell
 rservice
 ├── rservice.go
+├── client
+│   └── client.go
 └── server
     └── server.go
+
 ```
 
 ## 定义RPC服务方法
@@ -116,6 +119,7 @@ Escape character is '^]'.
 编写调用程序
 
 ```go
+// client/client.go
 package main
 
 import (
