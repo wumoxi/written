@@ -141,7 +141,7 @@ func main() {
 	// 创建RPC客户端
 	client := jsonrpc.NewClient(conn)
 
-	// 声明RPC调用结果
+	// 声明RPC调用回复结果
 	var reply float64
 
 	// 调用RPC服务
