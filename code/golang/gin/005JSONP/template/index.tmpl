@@ -1,0 +1,29 @@
+<html>
+<a href="javascript: void(0);" onclick="SayHello('张三')">SayHello</a>
+</html>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    function SayHello(name) {
+        // Using YQL and JSONP
+        $.ajax({
+            url: "/email",
+
+            // The name of the callback parameter, as specified by the YQL service
+            jsonp: "callback",
+
+            // Tell jQuery we're expecting JSONP
+            dataType: "jsonp",
+
+            // Tell YQL what we want and that we want JSON
+            data: {
+                format: "json"
+            },
+
+            // Work with the response
+            success: function( response ) {
+                console.log("hello, " + name + " your email address is " + response.email)
+            }
+        });
+    }
+</script>

@@ -2,10 +2,6 @@
 
 记录在学习或工作中使用过的相关技术，以防止岁月的冲击！
 
-## 支付相关
-
-### [Yii2接入PayPal支付](markdown/pay/yii2_join_up_paypal.md)
-
 ## Golang
 
 ### [Gin框架](markdown/golang/gin-use.md)
@@ -15,13 +11,15 @@
 ### [Golang查看文档](markdown/golang/golang-check-view-document.md)
 ### [分布式系统特点](markdown/golang/featrues-of-distributed-system.md)
 ### [jsonRPC简单使用](markdown/golang/jsonrpc-sample-use.md)
-
 ### URL去重
-
 - 哈希表
 - 计算MD5等哈希，再存哈希表
 - 使用bloom filter多重哈希结构
 - 使用Redis等KEY-VALUE存储系统实现分布式去重
+
+## JQUERY
+
+### [JSONP](markdown/jquery/jsonp.md)
 
 ## LINUX
 
@@ -83,3 +81,6 @@ $ docker logs -f -t --tail 100 1707a34511f4
 
 ### [索引库设置mappings具体字段类型，禁止自动根据数据格式识别它的类型](https://blog.csdn.net/wfs1994/article/details/80766935)
 
+## 支付相关
+
+### [Yii2接入PayPal支付](markdown/pay/yii2_join_up_paypal.md)
