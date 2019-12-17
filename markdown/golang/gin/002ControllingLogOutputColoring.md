@@ -93,3 +93,7 @@ $ go run server.go
 当有请求被处理时，例如访问注册路由 `localhost:8080/ping` logger会默认在标准输出记录请求处理日志
 
 ![强制记录日志的颜色](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191217_4.png)
+
+## 目录
+
+[BACK](../gin-use.md)
