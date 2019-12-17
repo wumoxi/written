@@ -57,7 +57,7 @@ func main() {
 $ go run server.go
 ```
 
-![PostmanAPI接口测试](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191217_62.png)
+![PostmanAPI接口测试](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191217_63.png)
 
 也可以通过 `curl` 命令进行命令行测试
 
