@@ -17,6 +17,10 @@
 - 使用bloom filter多重哈希结构
 - 使用Redis等KEY-VALUE存储系统实现分布式去重
 
+## 计算机科学术语
+
+### [认证(authentication)和授权(authorization)的区别](https://blog.csdn.net/u011537073/article/details/72876139)
+
 ## JQUERY
 
 ### [JSONP](markdown/jquery/jsonp.md)
