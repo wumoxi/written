@@ -82,7 +82,7 @@ $ go run server.go
 
 ![Chrome浏览器控制台](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191217_59.png)
 
-再通过`network`标签也可以看到接口具体的响应数据
+也可以通过`network`标签查看接口具体的响应数据
 
 ![接口具体的响应数据](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191217_61.png)
 
