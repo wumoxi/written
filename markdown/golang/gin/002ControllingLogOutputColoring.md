@@ -32,7 +32,7 @@ func main() {
 
 运行HTTP服务端程序，会看到如下信息
 
-```shell
+```text
 $ go run server.go 
 [GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
 
@@ -78,7 +78,7 @@ func main() {
 
 运行HTTP服务端程序，会看到如下信息
 
-```shell
+```text
 $ go run server.go 
 [GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
 
