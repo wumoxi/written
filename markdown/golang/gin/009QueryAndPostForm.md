@@ -49,7 +49,7 @@ $ curl --form name="ginner" --form message="This is framework for golang" -XPOST
 {"id":"8859","message":"This is framework for golang","name":"ginner","page":"1"} 
 ```
 
-从这个Demo中可以看到通过`Query`方法和`PostForm`方法可以进行`GET`请求参数的获取和`POST`请求参数的获取，当然`Query`也可以只用于`HTTP-GET`请求类型的参数获取，`PostForm`也可以只用于`HTTP-POST`请求类型的参数获取，不过这个Demo演示了，既存在GET请求参数也存在POST请求参数的获取，这就是通过`Query`和`PostForm`方法结合得以实现！
+从这个Demo中可以看到通过`Query`方法和`PostForm`方法可以进行`GET`请求参数的获取和`POST`请求参数的获取，当然`Query`也可以只用于`HTTP-GET`请求类型的参数获取，`PostForm`也可以只用于`HTTP-POST`请求类型的参数获取，不过这个Demo演示了，既存在GET请求参数也存在POST请求参数的获取，这就是通过`Query`和`PostForm`方法结合得以实现的！
 
 ## 目录
 
