@@ -1,6 +1,6 @@
 # 多文件上传
 
-查看详细[示例代码](https://github.com/gin-gonic/examples/tree/master/upload-file/multiple).
+查看官方[示例代码](https://github.com/gin-gonic/examples/tree/master/upload-file/multiple).
 
 ```go
 package main
