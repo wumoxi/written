@@ -37,7 +37,7 @@ func main() {
 		message.Message = "This is gin framework for golang, it's great!"
 		message.Number = 2019
 		// 注意 message.Name 在 JSON 中变成了 "name" 而不是 "Name" 这其决于message结构体Name字段的Tag标签声明
-		// 将输出：{"user": "Tom", "Message": "This is gin framework for golang, it's great!", "Number": 2019}
+		// 将输出：{"name":"Tom","Message":"This is gin framework for golang, it's great!","Number":2019}
 		context.JSON(http.StatusOK, message)
 	})
 
