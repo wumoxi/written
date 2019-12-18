@@ -31,7 +31,7 @@ func main() {
 		ct := resp.Header.Get("Content-Type")
 		// 附加请求头
 		extraHeader := map[string]string{
-			// 附加项: 附件并文件名为gopher.png
+			// 附加项: 附件并且文件名为gopher.png
 			"Content-Disposition": "attachment; filename=gopher.png",
 		}
 
