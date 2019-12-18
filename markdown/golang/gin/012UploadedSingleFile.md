@@ -55,7 +55,7 @@ func main() {
 		}
 
 		context.JSON(http.StatusOK, gin.H{
-			"info": fmt.Sprintf("File %s upload sucessfully with fields visit=%s name=%s and email=%s.", file.Filename, visit, name, email),
+			"info": fmt.Sprintf("File %s uploaded sucessfully with fields visit=%s name=%s and email=%s.", file.Filename, visit, name, email),
 		})
 	})
 
