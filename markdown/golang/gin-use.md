@@ -10,6 +10,7 @@
 #### [No10.SecureJSON防止JSON劫持](gin/010SecureJSON.md)
 #### [No11.XML/JSON/YAML/ProtoBuf渲染](gin/011XMLJSONYAMLProtoBuf.md)
 #### [No12.单文件上传](gin/012UploadedSingleFile.md)
+#### [No13.多文件上传](gin/013UploadedMultipleFile.md)
 ------------------------------------------------------
 ## 目录
 [BACK](../../README.md)
