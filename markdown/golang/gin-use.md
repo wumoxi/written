@@ -12,6 +12,7 @@
 #### [No12.单文件上传](gin/012UploadedSingleFile.md)
 #### [No13.多文件上传](gin/013UploadedMultipleFile.md)
 #### [No14.不使用默认的中间件](gin/014Don'tUseDefaultMiddleware.md)
+#### [No15.从reader读取数据](gin/015ReadDataFromReader.md)
 ------------------------------------------------------
 ## 目录
 [BACK](../../README.md)
