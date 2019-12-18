@@ -5,6 +5,7 @@
 ## [No5.JSONP](gin/005JSONP.md)
 ## [No6.Multipart/Urlencoded绑定](gin/006MultipartUrlencodedBinding.md)
 ## [No7.Multipart/Urlencoded表单](gin/007MultipartUrlencodedForm.md)
+## [No8.PureJSON](gin/008PureJSON.md)
 ------------------------------------------------------
 ## 目录
 [BACK](../../README.md)
