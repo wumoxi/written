@@ -101,28 +101,28 @@ $ protoc --go_out=plugins=grpc,import_path=example:. *.proto
 $ go run server.go
 ```
 
-使用 `curl` 命令调用API接口 `some-json`
+使用 `curl` 命令调用API接口 `/some-json`
 
 ```shell
 $ curl -XGET "localhost:8080/some-json"
 {"message":"This is gin framework for golang, it's great!","status":200}
 ```
 
-使用 `curl` 命令调用API接口 `more-json`
+使用 `curl` 命令调用API接口 `/more-json`
 
 ```shell
 $ curl -XGET "localhost:8080/more-json"
 {"name":"Tom","Message":"This is gin framework for golang, it's great!","Number":2019}
 ```
 
-使用 `curl` 命令调用API接口 `some-xml`
+使用 `curl` 命令调用API接口 `/some-xml`
 
 ```shell
 $ curl -XGET "localhost:8080/some-xml" 
 <map><message>This is gin framework for golang, it&#39;s great!</message><status>200</status></map>
 ```
 
-使用 `curl` 命令调用API接口 `some-yaml`
+使用 `curl` 命令调用API接口 `/some-yaml`
 
 ```shell
 $ curl -XGET "localhost:8080/some-yaml"
@@ -130,7 +130,7 @@ message: This is gin framework for golang, it's great!
 status: 200
 ```
 
-使用 `curl` 命令调用API接口 `some-protobuf`
+使用 `curl` 命令调用API接口 `/some-protobuf`
 
 ```shell
 $ curl -XGET "localhost:8080/some-protobuf"
