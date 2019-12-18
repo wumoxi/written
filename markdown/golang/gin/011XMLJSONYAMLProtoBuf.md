@@ -77,8 +77,66 @@ func main() {
 }
 ```
 
-其中生成 `data/example.pf.go` 文件的protobuf文件定义如下
+其中生成 `data/example.pf.go` 文件的protobuf文件(example.proto)定义如下
 
 ```proto
+syntax = "proto2";
+package example;
 
+message Test {
+    required string label = 1;
+    repeated int64 reps = 2;
+}
 ```
+
+进行到 `data` 目录，执行以下命令即可生成 `example.pf.go` 文件
+
+```shell
+$ protoc --go_out=plugins=grpc,import_path=example:. *.proto
+```
+
+运行WEB服务器并使用`curl`命令在命令行进行测试
+
+```shell
+$ go run server.go
+```
+
+使用 `curl` 命令调用API接口 `some-json`
+
+```shell
+$ curl -XGET "localhost:8080/some-json"
+{"message":"This is gin framework for golang, it's great!","status":200}
+```
+
+使用 `curl` 命令调用API接口 `more-json`
+
+```shell
+$ curl -XGET "localhost:8080/more-json"
+{"name":"Tom","Message":"This is gin framework for golang, it's great!","Number":2019}
+```
+
+使用 `curl` 命令调用API接口 `some-xml`
+
+```shell
+$ curl -XGET "localhost:8080/some-xml" 
+<map><message>This is gin framework for golang, it&#39;s great!</message><status>200</status></map>
+```
+
+使用 `curl` 命令调用API接口 `some-yaml`
+
+```shell
+$ curl -XGET "localhost:8080/some-yaml"
+message: This is gin framework for golang, it's great!
+status: 200
+```
+
+使用 `curl` 命令调用API接口 `some-protobuf`
+
+```shell
+$ curl -XGET "localhost:8080/some-protobuf"
+
+test
+```
+## 目录
+
+[BACK](../gin-use.md)
