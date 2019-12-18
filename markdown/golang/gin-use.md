@@ -6,6 +6,7 @@
 ## [No6.Multipart/Urlencoded绑定](gin/006MultipartUrlencodedBinding.md)
 ## [No7.Multipart/Urlencoded表单](gin/007MultipartUrlencodedForm.md)
 ## [No8.PureJSON](gin/008PureJSON.md)
+## [No9.Query和PostForm结合使用](gin/009QueryAndPostForm.md)
 ------------------------------------------------------
 ## 目录
 [BACK](../../README.md)
