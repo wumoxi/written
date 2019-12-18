@@ -11,7 +11,7 @@
 #### [No11.XML/JSON/YAML/ProtoBuf渲染](gin/011XMLJSONYAMLProtoBuf.md)
 #### [No12.单文件上传](gin/012UploadedSingleFile.md)
 #### [No13.多文件上传](gin/013UploadedMultipleFile.md)
-#### [No14.多文件上传](gin/014Don'tUseDefaultMiddleware.md)
+#### [No14.不使用默认的中间件](gin/014Don'tUseDefaultMiddleware.md)
 ------------------------------------------------------
 ## 目录
 [BACK](../../README.md)
