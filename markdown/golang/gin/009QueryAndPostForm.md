@@ -1,4 +1,4 @@
-# Query和PostForm
+# Query和PostForm结合使用
 
 ```go
 package main
