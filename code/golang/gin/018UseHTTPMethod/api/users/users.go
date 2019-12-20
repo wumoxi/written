@@ -4,7 +4,7 @@ import (
 	"errors"
 	"net/http"
 	"strconv"
-	"written/code/golang/gin/018UseHTTPMethod/model/modelusers"
+	"written/code/golang/gin/018UseHTTPMethod/model/users"
 
 	"github.com/gin-gonic/gin"
 )

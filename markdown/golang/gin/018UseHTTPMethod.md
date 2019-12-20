@@ -8,6 +8,8 @@ Gin框架对[RESTfulAPI](http://www.ruanyifeng.com/blog/2014/05/restful_api.html
 
 定义这么一个接口，不光用户管理可以用，其它模块也可以用，那么样一来，每一个模块就可以快速的来实现其功能，如果功能不够用并且其他几个别的模块都需要这些功能也可以添加其它的接口，一个模块可以可以多个接口，多个接口之间也可以进行组合使用。
 
+具体的文件位置位于：[UseHTTPMethodBuildRESTFullAII/model/base/base.go](../../../code/golang/gin/018UseHTTPMethod/model/base/base.go)
+
 ```go
 // RESTFullAPI为RESTFullAPI接口类型
 type RESTFullAPI interface {
@@ -26,7 +28,7 @@ type RESTFullAPI interface {
 
 在用户模型定义上，Users类型实现了RESTFullAPI接口，并且添加了`usersToInterface`, `nextUserId`, `checkUserExists`三个私有方法它们的功能分别依次是`将Users类型转换为interface{}接口类型`、`获取下一个将要添加用户的ID值`、`检查用户是否存在`，这三个方法为辅助方法。与此同时也为`User`结构添加了`userToInterface`方法，用于将用户类型转换为`interface{}`接口类型。
 
-这一部分是数据操作，如果进一步进行优化的话，可以将其放入一个单独的包如：`model/users/users.go`
+具体的文件位置位于：[UseHTTPMethodBuildRESTFullAII/model/users/users.go](../../../code/golang/gin/018UseHTTPMethod/model/users/users.go)
 
 ```go
 // User用户类型声明
@@ -191,7 +193,7 @@ func (u *Users) Head() map[string]string {
 
 并且添加了两个辅助函数，分别是 `returnSuccessfully` 和 `returnError`，它们分别用于统一的`错误处理`和`成功响应`数据的返回。
 
-这一部分是API处理函数定义，如果进一步进行优化的话，可以将其放入一个单独的包如：`api/users/users.go`
+具体的文件位置位于：[UseHTTPMethodBuildRESTFullAII/api/users/users.go](../../../code/golang/gin/018UseHTTPMethod/api/users/users.go)
 
 ```go
 // users存储用户列表
@@ -427,29 +429,42 @@ func returnError(context *gin.Context, status int, err error) {
 }
 ```
 
-## 注册用户管理路由
+## 注册用户管理模块路由
+
+这里将用户管理模块路由注册，放入一个单独的文件中，这样的设计，可以在添加其它模块时各自在单独的路由包中来定义路由注册功能。
+
+具体的文件位置位于：[UseHTTPMethodBuildRESTFullAII/router/users/users.go](../../../code/golang/gin/018UseHTTPMethod/router/users/users.go)
+
+```go
+func Users(router *gin.Engine) {
+	// 获取所有用户信息
+	router.GET("/users", apiusers.GetUserAll())
+	// 获取一个用户信息
+	router.GET("/users/:id", apiusers.GetOne())
+	// 添加一个用户
+	router.POST("/users", apiusers.AddUser())
+	// 修改一个用户完整信息
+	router.PUT("/users/:id", apiusers.ChangeUser())
+	// 修改一个用户部分信息
+	router.PATCH("/users/:id", apiusers.ModifyUser())
+	// 删除一个用户
+	router.DELETE("/users/:id", apiusers.DeleteUser())
+	// 获取用户资源的元数据
+	router.HEAD("/users", apiusers.HeadUser())
+	// 获取信息，关于用户资源的哪些属性是客户端可以改变的。
+	router.OPTIONS("/users", apiusers.OptionsUser())
+}
+```
+
+## 实例化Gin应用引擎并且加载用户管理模块路由注册以及监听服务
 
 ```go
 func main() {
 	// 用默认的中间件创建一个杜松子酒路由器(记录器logger和恢复recovery（无崩溃）中间件)
 	router := gin.Default()
 
-	// 获取所有用户信息
-	router.GET("/users", GetUserAll())
-	// 获取一个用户信息
-	router.GET("/users/:id", GetOne())
-	// 添加一个用户
-	router.POST("/users", AddUser())
-	// 修改一个用户完整信息
-	router.PUT("/users/:id", ChangeUser())
-	// 修改一个用户部分信息
-	router.PATCH("/users/:id", ModifyUser())
-	// 删除一个用户
-	router.DELETE("/users/:id", DeleteUser())
-	// 获取用户资源的元数据
-	router.HEAD("/users", HeadUser())
-	// 获取信息，关于用户资源的哪些属性是客户端可以改变的。
-	router.OPTIONS("/users", OptionsUser())
+	// 注册用户管理模块API路由
+	routerusers.Users(router)
 
 	// 监听并在0.0.0.0:8080上启动服务
 	log.Fatal(router.Run(":8080"))
@@ -508,14 +523,17 @@ $ go run main.go
 $ tree 
 ├── main.go
 ├── api
-│   └── apiusers
+│   └── users
 │       └── users.go
-└── model
-    ├── base
-    │   └── base.go
-    └── modelusers
-        ├── users.go
-        └── users_test.go
+├── model
+│   ├── base
+│   │   └── base.go
+│   └── users
+│       ├── users.go
+│       └── users_test.go
+└── router
+    └── users
+        └── users.go
 ```
 
 [UseHTTPMethodBuildRESTFullAII](../../../code/golang/gin/018UseHTTPMethod)

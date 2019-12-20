@@ -1,4 +1,4 @@
-package base
+package modelbase
 
 // RESTFullAPI为RESTFullAPI接口类型
 type RESTFullAPI interface {
