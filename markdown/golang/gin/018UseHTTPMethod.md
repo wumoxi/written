@@ -191,7 +191,7 @@ func (u *Users) Head() map[string]string {
 
 并且添加了两个辅助函数，分别是 `returnSuccessfully` 和 `returnError`，它们分别用于统一的`错误处理`和`成功响应`数据的返回。
 
-这一部分是API处理定义，如果进一步进行优化的话，可以将其放入一个单独的包如：`api/users/users.go`
+这一部分是API处理函数定义，如果进一步进行优化的话，可以将其放入一个单独的包如：`api/users/users.go`
 
 ```go
 // users存储用户列表
