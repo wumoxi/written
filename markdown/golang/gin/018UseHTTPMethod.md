@@ -458,7 +458,7 @@ func main() {
 
 ## 运行WEB服务器并通过PostMan进行测试
 
-用户模型有单独的测试`main_test.go`文件，当然了你也可以通过单元测试对 API 接口进行测试，不过这里使用 PostMan 进行测试。
+用户模型有单独的测试文件可以在源码中找到，当然了你也可以通过单元测试对 API 接口进行测试，不过这里使用 PostMan 进行测试。
 
 ```shell
 $ go run main.go
@@ -500,6 +500,25 @@ $ go run main.go
 
 ![删除一个用户](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191220_90.png)
 
+## 源码
+
+代码组织已经细化，具体的目录结构如下
+
+```shell
+$ tree 
+├── main.go
+├── api
+│   └── apiusers
+│       └── users.go
+└── model
+    ├── base
+    │   └── base.go
+    └── modelusers
+        ├── users.go
+        └── users_test.go
+```
+
+[UseHTTPMethodBuildRESTFullAII](../../../code/golang/gin/018UseHTTPMethod)
 
 ## 目录
 
