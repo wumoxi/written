@@ -51,7 +51,7 @@ $ go run server.go
 
 ![Postman进行测试](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191220_91.png)
 
-通过Postman进行测试，使用POST方式调用API接口 `/get-query-string`，从下图结果可以看出，POST方式的请求参数都会被丢弃，对的这就是 `ShouldBindQuery` 和 `BindQuery` 方法的功能本质！
+通过Postman进行测试，使用POST方式调用API接口 `/get-query-string`，从下图结果可以看出，POST方式的请求参数都会被丢弃，对的，这就是 `ShouldBindQuery` 和 `BindQuery` 方法的功能本质！
 
 ![Postman进行API接口测试](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191220_92.png)
 
