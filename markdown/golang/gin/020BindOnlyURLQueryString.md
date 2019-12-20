@@ -40,20 +40,20 @@ func main() {
 }
 ```
 
-运行WEB服务器并通过PostMan进行测试
+运行WEB服务器并通过Postman进行测试
 
 ```shell
 $ go run server.go
 ```
 
-通过PostMan进行测试，使用GET方式调用API接口 `/get-query-string` 并添加查询参数如：`?name=张三&address=北京市东城区永外大街182号&mobile=13792928283`，
+通过Postman进行测试，使用GET方式调用API接口 `/get-query-string` 并添加查询参数如：`?name=张三&address=北京市东城区永外大街182号&mobile=13792928283`，
 从下图结果可以看出，它仅仅结构体中存在的字段，不存在的字段会被丢弃！
 
-![PostMan进行测试](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191220_91.png)
+![Postman进行测试](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191220_91.png)
 
-通过PostMan进行测试，使用POST方式调用API接口 `/get-query-string`，从下图结果可以看出，POST方式的请求参数都会被丢弃，对的这就是 `ShouldBindQuery` 和 `BindQuery` 方法的功能本质！
+通过Postman进行测试，使用POST方式调用API接口 `/get-query-string`，从下图结果可以看出，POST方式的请求参数都会被丢弃，对的这就是 `ShouldBindQuery` 和 `BindQuery` 方法的功能本质！
 
-![PostMan进行API接口测试](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191220_92.png)
+![Postman进行API接口测试](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191220_92.png)
 
 ## 目录
 
