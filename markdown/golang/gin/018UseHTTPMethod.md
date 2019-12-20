@@ -496,6 +496,10 @@ $ go run main.go
 
 ![获取信息，关于用户资源的哪些属性是客户端可以改变的](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191220_88.png)
 
+### 使用PostMan测试删除一个用户`DELETE`API接口
+
+![删除一个用户](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191220_90.png)
+
 
 ## 目录
 
