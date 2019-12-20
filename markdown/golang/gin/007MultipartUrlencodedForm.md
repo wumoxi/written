@@ -47,4 +47,4 @@ $ curl --form  message="My name is WuMoxi" --form nickname="wumoxi" -XPOST "loca
 
 ## 目录
 
-[BACK](../gin-use.md)
+[BACK](../GinUse.md)

@@ -85,4 +85,4 @@ $ curl -XPOST "localhost:8080/upload" -F name="wumoxi" -F email="wu.shaohua@foxm
 
 ## 目录
 
-[BACK](../gin-use.md)
+[BACK](../GinUse.md)

@@ -107,4 +107,4 @@ $ curl -XPOST "localhost:8080/upload" \
 
 ## 目录
 
-[BACK](../gin-use.md)
+[BACK](../GinUse.md)
