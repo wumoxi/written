@@ -17,7 +17,7 @@
 #### [No15.从reader读取数据](gin/015ReadDataFromReader.md)
 #### [No16.优雅地重启或停止](gin/016GracefullyRestartOrStopTheServer.md)
 #### [No17.使用BasicAuth中间件](gin/017UseBasicAuthMiddleware.md)
-#### [No18.使用HTTP方法](gin/018UseHTTPMethod.md)
+#### [No18.使用HTTP方法构建用户管理RESTFulAPI](gin/018UseHTTPMethod.md)
 
 ------------------------------------------------------
 

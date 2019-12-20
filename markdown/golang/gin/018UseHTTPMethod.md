@@ -1,4 +1,4 @@
-# 使用HTTP方法
+# 使用HTTP方法构建用户管理RESTFulAPI
 
 Gin框架对[RESTfulAPI](http://www.ruanyifeng.com/blog/2014/05/restful_api.html)设计支持比较友好，下面简单做一个用户管理API服务，这个服务没有将用户写入在存储系统如MYSQL或都是一些其它的存储服务，而是直接使用Map进行存储到内存中，服务重启数据将会丢失，不过在这里这是一个Demo真的是项目中不会这么干，也绝对不允许这么做，对于这个 Demo 演示RESTFulAPI是够用了！
 
