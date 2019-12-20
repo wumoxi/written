@@ -181,11 +181,11 @@ func (u *Users) Head() map[string]string {
 | 处理函数    | RESTFullAPI接口方法 | 处理函数功能描述                                          |
 | ----------- | ------------------- | --------------------------------------------------------- |
 | GetUserAll  | GET `/users`        | GetAll获取所有用户                                        |
-| GetOne      | GET `/users/:id`    | GetOne获取一条用户                                        |
-| AddUser     | POST `/users`       | Add添加一条用户                                           |
-| ChangeUser  | PUT `/users/:id`    | Change修改一条用户                                        |
-| ModifyUser  | PUT `/users/:id`    | Modify修改一条用户                                        |
-| DeleteUser  | DELETE `/users/:id` | Delete删除一条用户                                        |
+| GetOne      | GET `/users/:id`    | GetOne获取一个用户                                        |
+| AddUser     | POST `/users`       | Add添加一个用户                                           |
+| ChangeUser  | PUT `/users/:id`    | Change修改一个用户                                        |
+| ModifyUser  | PUT `/users/:id`    | Modify修改一个用户                                        |
+| DeleteUser  | DELETE `/users/:id` | Delete删除一个用户                                        |
 | HeadUser    | HEAD `/users`       | Options获取信息，关于用户资源的哪些属性是客户端可以改变的 |
 | OptionsUser | OPTIONS `/users`    | Head返回用户资源元信息                                    |
 
