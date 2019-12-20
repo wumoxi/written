@@ -458,7 +458,7 @@ func main() {
 
 ## 运行WEB服务器并通过PostMan进行测试
 
-用户模型有单独的测试`main_test.go`文件，当然了你也可以通过单元测试对 API 接口进行测试，不这里什么 PostMan 进行测试。
+用户模型有单独的测试`main_test.go`文件，当然了你也可以通过单元测试对 API 接口进行测试，不过这里什么 PostMan 进行测试。
 
 ```shell
 $ go run main.go
