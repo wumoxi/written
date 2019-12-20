@@ -73,7 +73,7 @@ func (u *Users) GetAll() interface{} {
 	return u.usersToInterface()
 }
 
-// GetOne获取一条用户
+// GetOne获取一个用户
 func (u *Users) GetOne(id int) (interface{}, error) {
 	if user, ok := (*u)[id]; ok {
 		return user.userToInterface(), nil
@@ -81,7 +81,7 @@ func (u *Users) GetOne(id int) (interface{}, error) {
 	return nil, errors.New("user does not exist")
 }
 
-// Add添加一条用户
+// Add添加一个用户
 func (u *Users) Add(params interface{}) (interface{}, error) {
 	user, ok := params.(*User)
 	if !ok {
@@ -99,7 +99,7 @@ func (u *Users) Add(params interface{}) (interface{}, error) {
 	return user.userToInterface(), nil
 }
 
-// Change修改一条用户
+// Change修改一个用户
 func (u *Users) Change(id int, params interface{}) (interface{}, error) {
 	user, ok := (*u)[id]
 	if !ok {
@@ -115,7 +115,7 @@ func (u *Users) Change(id int, params interface{}) (interface{}, error) {
 	return user.userToInterface(), nil
 }
 
-// Modify修改一条用户
+// Modify修改一个用户
 func (u *Users) Modify(id int, params interface{}) (interface{}, error) {
 	user, ok := (*u)[id]
 	if !ok {
@@ -127,7 +127,7 @@ func (u *Users) Modify(id int, params interface{}) (interface{}, error) {
 	return user.userToInterface(), nil
 }
 
-// Delete删除一条用户
+// Delete删除一个用户
 func (u *Users) Delete(id int) (bool, error) {
 	_, ok := (*u)[id]
 	if !ok {
@@ -168,10 +168,10 @@ func (u *Users) Head() map[string]string {
 	return h
 }
 
-// 存储用户列表
+// users存储用户列表
 var users = make(Users)
 
-// 获取所有用户API接口处理函数
+// GetUserAll获取所有用户API接口处理函数
 func GetUserAll() gin.HandlerFunc {
 	return func(context *gin.Context) {
 		returnSuccessfully(context, http.StatusOK, gin.H{
@@ -181,7 +181,7 @@ func GetUserAll() gin.HandlerFunc {
 	}
 }
 
-// 获取单个用户API接口处理函数
+// GetOne获取单个用户API接口处理函数
 func GetOne() gin.HandlerFunc {
 	return func(context *gin.Context) {
 		id := context.Param("id")
@@ -209,7 +209,7 @@ func GetOne() gin.HandlerFunc {
 	}
 }
 
-// 添加用户API接口处理函数
+// AddUser添加用户API接口处理函数
 func AddUser() gin.HandlerFunc {
 	return func(context *gin.Context) {
 		name := context.PostForm("name")
@@ -244,7 +244,7 @@ func AddUser() gin.HandlerFunc {
 	}
 }
 
-// 修改用户API接口处理函数
+// ChangeUser修改用户API接口处理函数
 func ChangeUser() gin.HandlerFunc {
 	return func(context *gin.Context) {
 		id := context.Param("id")
@@ -289,7 +289,7 @@ func ChangeUser() gin.HandlerFunc {
 	}
 }
 
-// 修改用户API接口处理函数
+// ModifyUser修改用户API接口处理函数
 func ModifyUser() gin.HandlerFunc {
 	return func(context *gin.Context) {
 		id := context.Param("id")
@@ -373,7 +373,7 @@ func HeadUser() gin.HandlerFunc {
 	}
 }
 
-// 获取信息，关于用户资源的哪些属性是客户端可以改变的
+// OptionsUser获取信息，关于用户资源的哪些属性是客户端可以改变的
 func OptionsUser() gin.HandlerFunc {
 	return func(context *gin.Context) {
 		options, err := users.Options()
