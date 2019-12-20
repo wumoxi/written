@@ -19,6 +19,7 @@
 #### [No17.使用BasicAuth中间件](gin/017UseBasicAuthMiddleware.md)
 #### [No18.使用HTTP方法构建用户管理模块RESTFulAPI](gin/018UseHTTPMethod.md)
 #### [No19.使用中间件(有明确留坑)](gin/019UseMiddleware.md)
+#### [No20.只绑定URL查询字符串](gin/020BindOnlyURLQueryString.md)
 
 ------------------------------------------------------
 
