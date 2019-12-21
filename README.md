@@ -25,6 +25,7 @@
 
 ### [开机启动服务](markdown/Linux/CentOS7OpenStartService.md)
 ### [CentOS7开放端口号](markdown/Linux/CentOS7OpenPorts.md)
+### [CentOS7系统资源管理](markdown/Linux/CentOS7SystemResourceManagement.md)
 
 ## Docker
 
