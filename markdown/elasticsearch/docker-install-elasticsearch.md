@@ -138,7 +138,7 @@ Changed password for user [remote_monitoring_user]
 Changed password for user [elastic]
 ```
 
-至此密码添加成功，包含以下用户`elastic`,`apm_system`,`kibana`,`logstash_system`,`beats_system`,`remote_monitoring_user`，不使用密码接口访问 `localhost:9200`，你会得到如下如果
+至此密码添加成功，包含以下用户`elastic`、`apm_system`、`kibana`、`logstash_system`、`beats_system`、`remote_monitoring_user`，不使用密码接口访问 `localhost:9200`，你会得到如下如果
 
 ```shell
 [root@3aabe7452397 elasticsearch]# curl localhost:9200?pretty=true
