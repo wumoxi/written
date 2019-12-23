@@ -168,7 +168,7 @@ $ curl -XGET http://localhost:5601
 
 ![测试kibana容器是否可用](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191223_111.png)
 
-果然就是这个样子，**注意**这个`ali.test`域名是我绑定在本地Mac中的一个host配置，IP就是对应于阿里云ECS云服务器IP，输入用户名和密码进行登录认证
+果然就是这个样子，**注意**这个`ali.test`域名是我绑定在本地Mac中的一个host配置，IP对应于阿里云ECS云服务器IP，输入用户名和密码进行登录认证
 
 ![测试kibana容器是否可用](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191223_112.png)
 
