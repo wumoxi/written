@@ -37,9 +37,9 @@ Kibana server is not ready yet
 1. 搜索引擎搜索、
 2. [通过官方文档](https://www.elastic.co/guide/en/kibana/current/docker.html)、
 3. 直接查看镜像详情
-    - 直接通过执行`docker image inspcet image:[tag]`命令，即可查看镜像的详情，可以找到镜像的详细信息的`Config.WorkingDir`JSON数据项，一个值一般类型如`/usr/share/kibana`, 这就是一个服务容器的工作目录，其配置文件一般都会在这里，不过话又说回来，一个没有运行任何容器的镜像，也谈不上从容器拷贝文件到宿主机
+    - 直接通过执行`docker image inspcet image:[tag]`命令，即可查看镜像的详细信息，在这个详细信息中可以找到`Config.WorkingDir`JSON数据项，这个值一般类似于 `/usr/share/kibana`, 这就是一个服务容器的工作目录，其配置文件一般都会在这里，不过话又说回来，一个没有运行任何容器的镜像，也谈不上从容器拷贝文件到宿主机。
 4. 直接查看容器详情
-    - 个人认为这种方式是逼格最高的，直接通过执行`docker inspcet (CintainerID)`命令，即可查看运行容器的详情，可以找到容器的详细信息的`Config.WorkingDir`JSON数据项，一个值一般类型如`/usr/share/kibana`, 这就是一个服务容器的工作目录，其配置文件一般都会在这里
+    - 个人认为这种方式是逼格最高的，直接通过执行`docker inspcet (CintainerID)`命令，即可查看运行容器的详细信息，在这个详细信息中可以找到`Config.WorkingDir`JSON数据项，这个值一般类似于 `/usr/share/kibana`, 这就是一个服务容器的工作目录，其配置文件一般都会在这里。
 
 #### 进入kibana容器内部查看具体的配置文件路径
 
