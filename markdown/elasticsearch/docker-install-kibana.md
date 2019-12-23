@@ -156,7 +156,7 @@ $ docker run --restart always -d -p 5601:5601 -v /server/docker/kibana/config:/u
 
 - `-v /server/docker/kibana/config:/usr/share/kibana/config`： 将宿主机`/server/docker/kibana/config`目录挂载到服务容器环境`/usr/share/kibana/config`目录。
 
-- `--link es:elasticsearch`： 可以用来链接2个容器，使得源容器（es）和接收容器（kibana）之间可以互相通信，解除了容器之间通信对容器IP的依赖，`--link 源容器ID或容器名称:接收容器在内部使用的容器名称`，还记不记得`/server/docker/kibana/config/kibana.yml`配置文件中有这么一行配置`elasticsearch.hosts: [ "http://elasticsearch:9200" ]`，对的`http://elasticsearch:9200`就是对应于`接收容器在内部使用的容器名称`，它和容器名称为`es`容器对应并关联。
+- `--link es:elasticsearch`： 可以用来链接2个容器，使得源容器（es）和接收容器（kibana）之间可以互相通信，解除了容器之间通信对容器IP的依赖，`--link 源容器ID或容器名称:接收容器在内部使用的容器名称`，还记不记得`/server/docker/kibana/config/kibana.yml`配置文件中有这么一行配置`elasticsearch.hosts: [ "http://elasticsearch:9200" ]`，对的`http://elasticsearch:9200`中的`elasticsearch`域名，就是对应于`接收容器在内部使用的容器名称`，它和容器名称为`es`的服务容器对应并关联。
 
 ### 测试kibana容器是否可用
 
