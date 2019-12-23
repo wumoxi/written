@@ -138,7 +138,7 @@ Changed password for user [remote_monitoring_user]
 Changed password for user [elastic]
 ```
 
-至此密码添加成功，不使用密码接口访问 `localhost:9200`，你会得到如下如果
+直接输入相应的密码即可(密码输入不显示任何内容，这在linux系统下涉及到密码操作的基本上都是这样子，盲输就是，这是也linux安全性的一个表现)，至此密码添加成功，不使用密码接口访问 `localhost:9200`，你会得到如下如果
 
 ```shell
 [root@3aabe7452397 elasticsearch]# curl localhost:9200?pretty=true
