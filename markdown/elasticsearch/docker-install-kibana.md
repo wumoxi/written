@@ -164,7 +164,7 @@ $ docker run --restart always -d -p 5601:5601 -v /server/docker/kibana/config:/u
 $ curl -XGET http://localhost:5601
 ```
 
-很好，没有任何输出也没有任何错误提示，说明它已经运行起来了，不信的话可以通过测试进行测试
+很好，没有任何输出也没有任何错误提示，说明它已经运行起来了，不信的话可以通过浏览器进行测试
 
 ![测试kibana容器是否可用](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191223_111.png)
 
