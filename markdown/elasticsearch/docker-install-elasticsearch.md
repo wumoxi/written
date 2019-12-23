@@ -192,7 +192,7 @@ Changed password for user [elastic]
 
 `-u elastic:es-secret` 指定服务认证的用户名和密码。这里使用 `elastic` 这个用户进行 `elasticsearch` 服务操作。
 
-### Step.10 修改成功退出elasticsearch内部环境
+### Step.9 修改成功退出elasticsearch内部环境
 
 ```shell
 [root@3aabe7452397 elasticsearch]# exit
