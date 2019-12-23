@@ -167,7 +167,7 @@ Changed password for user [elastic]
 }
 ```
 
-对的，就是这样子的，我们的目的就是不能它这个服务器在网络上裸奔，要不然你的服务都成了公共的了，这就不好了，这就是给elasticsearch上了把锁，想进得提供钥匙
+对的，就是这样子的，我们的目的就是不能让这个elasticsearch服务在网络上裸奔，要不然你的服务都成了公共的了，这就不好了，这就是给elasticsearch上了把锁，想进得提供钥匙
 
 ```shell
 [root@3aabe7452397 elasticsearch]# curl -u elastic:es-secret localhost:9200?pretty=true
