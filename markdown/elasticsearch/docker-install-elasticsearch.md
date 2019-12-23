@@ -35,7 +35,7 @@ caused by: java.nio.file.accessdeniedexception: /usr/share/elasticsearch/data/no
 $ docker exec -it es bash
 ```
 
-### Step.2 使用密码设置工具进行设置密码
+### Step.2 使用密码设置工具进行密码设置
 
 ```shell
 [root@3aabe7452397 elasticsearch]# elasticsearch-setup-passwords interactive
