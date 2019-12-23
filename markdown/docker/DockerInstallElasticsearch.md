@@ -27,7 +27,7 @@ caused by: java.nio.file.accessdeniedexception: /usr/share/elasticsearch/data/no
 ## [使用Docker Compose启动多节点集群](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker-compose-file)
 
 
-## 设置elasticsearch密码[©](https://blog.csdn.net/qq_41980563/article/details/88725584)
+## 设置elasticsearch密码[¹](https://blog.csdn.net/qq_41980563/article/details/88725584)
 
 ### Step.1 进入到容器内部环境
 
