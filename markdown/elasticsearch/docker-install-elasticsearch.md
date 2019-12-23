@@ -138,7 +138,11 @@ Changed password for user [remote_monitoring_user]
 Changed password for user [elastic]
 ```
 
-至此密码添加成功，包含以下用户`elastic`、`apm_system`、`kibana`、`logstash_system`、`beats_system`、`remote_monitoring_user`，不使用密码接口访问 `localhost:9200`，你会得到如下如果
+至此密码添加成功，包含以下用户`elastic`、`apm_system`、`kibana`、`logstash_system`、`beats_system`、`remote_monitoring_user`。
+
+### Step.8 验证elasticsearch密码设置
+
+不使用密码接口访问 `localhost:9200`，你会得到如下如果
 
 ```shell
 [root@3aabe7452397 elasticsearch]# curl localhost:9200?pretty=true
@@ -188,7 +192,7 @@ Changed password for user [elastic]
 
 `-u elastic:es-secret` 指定服务用户名和密码。这里使用 `elastic` 这个用户进行 `elasticsearch` 服务操作。
 
-### Step.8 修改成功退出elasticsearch内部环境
+### Step.10 修改成功退出elasticsearch内部环境
 
 ```shell
 [root@3aabe7452397 elasticsearch]# exit
