@@ -109,7 +109,7 @@ $ docker restart es
 
 ### Step.7 再次进入容器内部并进行修改密码
 
-重复Step.1和Step.2，好了，进入正题，它提示如下
+重复Step.1和Step.2，好了，进入正题，它提示如下，并且提示你 `请确认你是否要继续` 当然了，输入 `y`，开始设置相关密码，直接输入相应的密码即可(密码输入不显示任何内容，这在linux系统下涉及到密码操作的基本上都是这样子，盲输就是，这是也linux安全性的一个表现)
 
 ```shell
 [root@3aabe7452397 elasticsearch]# elasticsearch-setup-passwords interactive
@@ -138,7 +138,7 @@ Changed password for user [remote_monitoring_user]
 Changed password for user [elastic]
 ```
 
-直接输入相应的密码即可(密码输入不显示任何内容，这在linux系统下涉及到密码操作的基本上都是这样子，盲输就是，这是也linux安全性的一个表现)，至此密码添加成功，不使用密码接口访问 `localhost:9200`，你会得到如下如果
+至此密码添加成功，不使用密码接口访问 `localhost:9200`，你会得到如下如果
 
 ```shell
 [root@3aabe7452397 elasticsearch]# curl localhost:9200?pretty=true
