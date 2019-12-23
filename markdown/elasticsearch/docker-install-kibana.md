@@ -99,6 +99,8 @@ elasticsearch.hosts: [ "http://elasticsearch:9200" ]
 xpack.monitoring.ui.container.elasticsearch.enabled: true
 ```
 
+综上所述，kibana配置文件具体的位置就于位于: `/usr/share/kibana/config/kibana.yml`
+
 #### 创建一个宿主机文件夹用于存放kibana配置文件
 
 ```shell
