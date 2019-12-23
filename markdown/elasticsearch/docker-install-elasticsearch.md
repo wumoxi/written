@@ -22,7 +22,7 @@ $ docker run --restart always -d -p 9200:9200 -p 9300:9300 -e "discovery.type=si
 caused by: java.nio.file.accessdeniedexception: /usr/share/elasticsearch/data/nodes
 ```
 
-这是因为你挂载到宿主机(Host)的目录，在这里也就是 `/usr/local/data/elasticsearch` 没有写入权限，需要将其文件夹的所有者和所属组进行修改，可以执行`chown -R /usr/local/data/elasticsearch`即可，重新运行容器。
+这是因为你挂载到宿主机Host的目录，在这里也就是 `/usr/local/data/elasticsearch` 没有写入权限，需要将其文件夹的所有者和所属组进行修改，可以执行`chown -R 1000:1000 /usr/local/data/elasticsearch`即可(详细请参考[issues#21](https://github.com/elastic/elasticsearch-docker/issues/21))，重新运行容器。
 
 ## [使用Docker Compose启动多节点集群](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker-compose-file)
 
@@ -101,7 +101,7 @@ xpack.security.enabled: true
 [root@3aabe7452397 elasticsearch]# exit
 ```
 
-### Step.6 重启elasticsearch容器
+### Step.6 在宿主机Host重启elasticsearch容器
 
 ```shell
 $ docker restart es
