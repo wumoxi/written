@@ -47,7 +47,7 @@ Kibana server is not ready yet
 $ docker exec -it kibana bash
 ```
 
-查看当前路径你会发现一个很有意思的事件
+查看当前路径你会发现一个很有意思的事情
 
 ```shell
 bash-4.2$ pwd
