@@ -76,7 +76,7 @@ drwxrwsr-x    2 kibana root    4096 Dec 17 00:01 webpackShims
 drwxrwsr-x    5 kibana root    4096 Dec 17 00:01 x-pack
 ```
 
-很好，从当前目录列表文件列表中可以看到有一个 `config` 目录，列出来看看呗
+很好，从当前目录文件列表中可以看到有一个 `config` 目录，列出来看看呗
 
 ```shell
 bash-4.2$ ll config
