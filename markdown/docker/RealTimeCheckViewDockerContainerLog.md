@@ -1,4 +1,4 @@
-# 实时查看docker容器日志
+# Docker实时查看容器日志
 
 ```shell
 $ docker logs -f -t --tail (行数) (容器ID)
