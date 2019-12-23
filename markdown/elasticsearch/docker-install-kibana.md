@@ -84,7 +84,7 @@ total 4
 -rw-rw-r-- 1 kibana root 240 Dec 17 00:01 kibana.yml
 ```
 
-好的果不其然，它里有一个 `kibana.yml` 文件，好的就是它了，不然也可以看看具体文件内容
+好的果不其然，它里面有一个 `kibana.yml` 文件，好的就是它了，不然也可以看看具体文件内容
 
 ```shell
 bash-4.2$ cat config/kibana.yml 
