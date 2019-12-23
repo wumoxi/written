@@ -198,7 +198,7 @@ Changed password for user [elastic]
 [root@3aabe7452397 elasticsearch]# exit
 ```
 
-当然了，在 docker 环境下有了elasticsearch服务容器，那应该有一个更好用的管理工具才对，请进下到[Docker下安装Kibana](docker-install-kibana.md)
+当然了，在 docker 环境下有了elasticsearch服务容器，那应该有一个更好用的管理工具才对，请右转查看[Docker下安装Kibana](docker-install-kibana.md)
 
 ## 目录
 [Back](../../README.md)
