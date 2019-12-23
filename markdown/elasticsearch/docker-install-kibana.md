@@ -126,7 +126,7 @@ elasticsearch.username: "elastic"
 elasticsearch.password: "es-secret"
 ```
 
-关于如何设置elasticsearch密码，请参考[`「Docker下安装ElasticSearch#设置elasticsearch密码」`](./docker-install-elasticsearch.md#%E8%AE%BE%E7%BD%AEelasticsearch%E5%AF%86%E7%A0%81)，下面是修改后的配置文件内容
+关于如何设置elasticsearch密码，请参考[`Docker下安装ElasticSearch#设置elasticsearch密码`](./docker-install-elasticsearch.md#%E8%AE%BE%E7%BD%AEelasticsearch%E5%AF%86%E7%A0%81)，下面是修改后的配置文件内容
 
 ```yaml
 #
