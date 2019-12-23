@@ -86,10 +86,6 @@ total 4
 
 好的果不其然，它里面有一个 `kibana.yml` 文件，好的就是它了，当然也可以看看文件的具体内容
 
-```shell
-bash-4.2$ cat config/kibana.yml 
-```
-
 ```yaml
 bash-4.2$ cat config/kibana.yml 
 #
