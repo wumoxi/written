@@ -45,7 +45,7 @@ Linux中的ps命令是Process Status的缩写。ps命令用来列出系统中当
 $ ps -A
 ```
 
-## 显示指定用户信息
+## 显示指定用户进程信息
 
 ```shell
 $ ps -u root
