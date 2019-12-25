@@ -59,7 +59,7 @@
 
 ![再一次去验证](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191225_13.png)
 
-很好，关于这个composer安装依赖问题也就解决了！
+很好，关于这个composer安装依赖的问题也就解决了！
 
 ## 目录
 [BACK](../../../README.md)
