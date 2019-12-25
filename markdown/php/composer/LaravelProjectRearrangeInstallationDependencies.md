@@ -28,7 +28,7 @@
 
 ![laravel-admin Undefined variable: content](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191225_4.png)
 
-果不其然，第一个就是，同样也有人遇到了这个问题，这就很好说明问题了，后台使用的是 `laravel-admin` 开发的后台管理模块，当前依赖很显然也之前的依赖代码不兼容！
+果不其然，第一个就是，同样也有人遇到了这个问题，这就很好说明问题了，后台使用的是 `laravel-admin` 开发的后台管理模块，当前安装的依赖很显然与之前的依赖代码不兼容！
 
 ![laravel-admin Undefined variable: content](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191225_5.png)
 
