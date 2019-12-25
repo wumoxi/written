@@ -24,7 +24,7 @@
 ![访问一下后台看看如何](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191225_8.png)
 
 不对呀！这是错报了(当然了，正式线不应该出现这种情况，但是当前只是调试一下，回头修改一个即可，禁止错误抛出给用户，应该提高安全性！)，说是找不到 `content`，
-没有重新部署之前都是好好的，现在出现这个情况了，初步怀疑是之前使用的依赖在此次安装依赖时更新了版本，所以就在搜索引擎上搜索了一下 `laravel-admin Undefined variable: content`
+没有重新部署之前都是好好的，现在出现这个情况了，初步怀疑是之前使用的依赖在此次安装依赖时更新了版本，因为删除了`composer.lock`文件，所以就在搜索引擎上搜索了一下 `laravel-admin Undefined variable: content`
 
 ![laravel-admin Undefined variable: content](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191225_4.png)
 
