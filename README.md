@@ -49,6 +49,7 @@
 ### [settings和mappings详解](https://www.cnblogs.com/zlslch/p/6474424.html)
 ### [索引库设置mappings具体字段类型，禁止自动根据数据格式识别它的类型](https://blog.csdn.net/wfs1994/article/details/80766935)
 
-## 支付相关
+## PHP
 
 ### [Yii2接入PayPal支付](markdown/php/pay/yii2_join_up_paypal.md)
+### [Laravel项目重新部署安装依赖](markdown/php/composer/LaravelProjectRearrangeInstallationDependencies.md)
