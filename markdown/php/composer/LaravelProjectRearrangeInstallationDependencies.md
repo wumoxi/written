@@ -51,7 +51,7 @@
 ![远程服务器(linux) `composer.lock` 前50行内容如下](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191225_9.png)
 ![本地工作机(mac) `composer.lock` 前50行内容如下](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191225_10.png)
 
-就是这个样子的，将本地工作机(mac) `composer.lock` 文件中的所有 `https://dl.laravel-china.org/` 改为 `https://mirrors.aliyun.com/composer/dists/`，这样就完成OK!
+就是这个样子的，将本地工作机(mac) `composer.lock` 文件中的所有 `https://dl.laravel-china.org/` 改为 `https://mirrors.aliyun.com/composer/dists/`，这样就完成OK!，为什么要改，原因是 `https://dl.laravel-china.org/` 这个镜像源跪了，好吧，也就是说它不能用了。
 
 ![本地工作机(mac) `composer.lock` 前50行内容如下](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191225_11.png)
 
