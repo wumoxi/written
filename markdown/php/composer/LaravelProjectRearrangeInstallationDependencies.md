@@ -11,7 +11,7 @@
 
 ![进行安装依赖](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191225_1.png)
 
-不过不会安装成功的，证书验证失败，这是为什么呢，在网络上找了个遍，都说是安装了`openssl`扩展，具体可以参见composer官方github仓库[issue#3346](https://github.com/composer/composer/issues/3346)，可是不管用，再次运行 `composer install` 依旧是这个样子。那就索性把`composer.lock`给删除了，不它进行上体的版本锁定，于是乎再一次执行`composer install`命令进行依赖的安装
+不过不会安装成功的，证书验证失败，这是为什么呢，在网络上找了个遍，都说是安装了`openssl`扩展，具体可以参见composer官方github仓库[issue#3346](https://github.com/composer/composer/issues/3346)，可是不管用，再次运行 `composer install` 依旧是这个样子。那就索性把`composer.lock`给删除了，不用它进行固定版本的锁定，于是乎再一次执行`composer install`命令进行依赖的安装
 
 ![进行安装依赖](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191225_2.gif)
 
