@@ -46,7 +46,7 @@
 
 ![本地工作机(mac) `composer.lock` 前50行内容如下](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191225_7.png)
 
-有没有发现什么关键性的不一致，对的正如你看到一样，每个包的`dist.mirrors.url` 不一样，一个是`https://mirrors.aliyun.com/`，一个是`https://dl.laravel-china.org/`，你千万不要说每个包的 `source.reference` 和 `dist.reference` 也不一样，这个你没有办法确定，你要是改这个东西那你真是要跪了！对的，为什么我们只关注这个 `dist.mirrors.url`，原因是当你`composer install` 的时候它会去这些源去获取依赖数据！
+有没有发现什么关键性的不一致，对的正如你看到一样，每个包的`dist.mirrors.url` 不一样，一个是`https://mirrors.aliyun.com/`，一个是`https://dl.laravel-china.org/`，你千万不要说每个包的 `source.reference` 和 `dist.reference` 也不一样，这个你没有办法确定，你要是去改这个东西，那你真的是要跪了！对的，为什么我们只关注这个 `dist.mirrors.url`，原因是当你`composer install` 的时候它会去这些源去获取依赖数据！
 
 ![远程服务器(linux) `composer.lock` 前50行内容如下](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191225_9.png)
 ![本地工作机(mac) `composer.lock` 前50行内容如下](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191225_10.png)
