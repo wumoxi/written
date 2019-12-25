@@ -55,7 +55,7 @@
 
 ![本地工作机(mac) `composer.lock` 前50行内容如下](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191225_11.png)
 
-好的，将本地修改后的`composer.lock`文件提示到版本库，然后，在远程服务器拉取，再次执行`composer install`，再一次去验证！
+好的，将本地修改后的`composer.lock`文件提交到版本库，然后，在远程服务器拉取，再次执行`composer install`，再一次去验证！
 
 ![再一次去验证](https://lucklit.oss-cn-beijing.aliyuncs.com/written/Snip20191225_13.png)
 
