@@ -31,7 +31,7 @@ slice: [中国人    美国人  英国人 法国人], len: 8
 
 ## 正确的处理方式
 
-```shell
+```go
 package main
 
 import (
