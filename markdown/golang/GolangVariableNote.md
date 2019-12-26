@@ -57,7 +57,7 @@ func main() {
 }
 
 func n() { 
-	print(a) 
+    print(a) 
 }
 
 func m() {
