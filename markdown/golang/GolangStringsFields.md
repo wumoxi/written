@@ -17,7 +17,7 @@ import (
 func main() {
 	s := "中国人    美国人  英国人 法国人"
 	sli := strings.Split(s, " ")
-	fmt.Printf("slice: %+v, len: %d\n", sli, len(sli))
+	fmt.Printf("slice: %v, len: %d\n", sli, len(sli))
 }
 ```
 
@@ -42,7 +42,7 @@ import (
 func main() {
 	s := "中国人    美国人  英国人 法国人"
 	sli := strings.Fields(s)
-	fmt.Printf("slice: %+v, len: %d\n", sli, len(sli))
+	fmt.Printf("slice: %v, len: %d\n", sli, len(sli))
 }
 ```
 
