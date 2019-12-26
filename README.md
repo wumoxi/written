@@ -12,6 +12,7 @@
 ### [分布式系统特点](markdown/golang/FeatruesOfDistributedSystem.md)
 ### [JsonRPC简单使用](markdown/golang/JSONRPCSampleUse.md)
 ### [URL去重方式](markdown/golang/URLDeduplication.md)
+### [Golang变量注意点](markdown/golang/GolangVariableNote.md)
 
 ## 计算机科学术语
 
