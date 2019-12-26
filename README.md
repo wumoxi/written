@@ -14,6 +14,7 @@
 ### [URL去重方式](markdown/golang/URLDeduplication.md)
 ### [Golang变量注意点](markdown/golang/GolangVariableNote.md)
 ### [Golang格式化输出](markdown/golang/GolangFormatOutput.md)
+### [Golang中int和int64是相同类型吗？](markdown/golang/GolangInt64.md)
 
 ## 计算机科学术语
 
