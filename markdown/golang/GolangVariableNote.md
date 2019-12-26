@@ -117,7 +117,7 @@ func f1() {
 }
 
 func f2() {
-   print(a)
+    print(a)
 }
 ```
 
