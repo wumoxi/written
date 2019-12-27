@@ -20,5 +20,11 @@ $ tail -n number file
 $ tail -f -n number file
 ```
 
+## 查看文件的中间部分行
+
+```shell
+$ sed -n 'StartNumber,EndNumber(p)' filename
+```
+
 ## 目录
 [BACK](../../README.md)

@@ -13,6 +13,7 @@
 ### [JsonRPC简单使用](markdown/golang/JSONRPCSampleUse.md)
 ### [URL去重方式](markdown/golang/URLDeduplication.md)
 ### [Golang变量注意点](markdown/golang/GolangVariableNote.md)
+### [Golang日期和日间注意点](markdown/golang/GolangTimeNote.md)
 ### [Golang格式化输出](markdown/golang/GolangFormatOutput.md)
 ### [Golang中int和int64是相同类型吗？](markdown/golang/GolangInt64.md)
 ### [Golang切割包含不定个数空格的字符串怎么处理？](markdown/golang/GolangStringsFields.md)
