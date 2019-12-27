@@ -21,6 +21,10 @@
 ### [Golang中int和int64是相同类型吗？](markdown/golang/GolangInt64.md)
 ### [Golang切割包含不定个数空格的字符串怎么处理？](markdown/golang/GolangStringsFields.md)
 
+## 计算机基础
+
+### [原码, 反码, 补码](https://www.cnblogs.com/zhangziqiu/archive/2011/03/30/ComputerCode.html)
+
 ## 计算机科学术语
 
 ### [认证(authentication)和授权(authorization)的区别](https://blog.csdn.net/u011537073/article/details/72876139)
