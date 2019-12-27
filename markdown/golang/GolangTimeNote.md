@@ -73,3 +73,6 @@ func main() {
 ## 对某个进程或者说是Goroutine暂停一个时间段 
 
 `time.Sleep(d Duration)` 可以实现对某个进程（实质上是 goroutine）时长为 d 的暂停。
+
+## 目录
+[Back](../../README.md)
