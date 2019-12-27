@@ -17,6 +17,7 @@
 ### [Golang日期和时间注意点](markdown/golang/GolangTimeNote.md)
 ### [Golang关于反射的使用案例](markdown/golang/GolangReflectCase.md)
 ### [Golang格式化输出](markdown/golang/GolangFormatOutput.md)
+### [Golang字符串处理](markdown/golang/GolangStringProcess.md)
 ### [Golang中int和int64是相同类型吗？](markdown/golang/GolangInt64.md)
 ### [Golang切割包含不定个数空格的字符串怎么处理？](markdown/golang/GolangStringsFields.md)
 
