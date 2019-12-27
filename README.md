@@ -43,6 +43,7 @@
 ## Mac
 
 ### [Mac检测远程服务端口是否可用](markdown/mac/CentOS7CheckRmoteServicePortAvailable.md)
+### [Mac快捷键](https://support.apple.com/zh-cn/HT201236)
 
 ## Docker
 
