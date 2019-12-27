@@ -14,7 +14,7 @@
     - slice
     - map
     - channel
-    - pointer
+    - ptr
 
 ## 变量类型在内存中存储分类
 
