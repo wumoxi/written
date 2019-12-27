@@ -14,7 +14,7 @@ func GetFuncName(fn interface{}) (string, error) {
 }
 ```
 
-可以这么来具体使用
+可以这么具体来使用
 
 ```go
 package main
