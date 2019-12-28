@@ -12,6 +12,7 @@
 ### [JsonRPC简单使用](markdown/golang/JSONRPCSampleUse.md)
 ### [URL去重方式](markdown/golang/URLDeduplication.md)
 ### [Golang注意点](markdown/golang/GolangNotice.md)
+### [Golang算法](markdown/golang/GolangArithmetic.md)
 ### [Golang查看文档](markdown/golang/GolangCheckViewDocument.md)
 ### [Golang格式化输出](markdown/golang/GolangFormatOutput.md)
 ### [Golang字符串处理](markdown/golang/GolangStringProcess.md)
