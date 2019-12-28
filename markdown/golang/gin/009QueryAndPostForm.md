@@ -53,4 +53,4 @@ $ curl --form name="ginner" --form message="This is framework for golang" -XPOST
 
 ## 目录
 
-[BACK](../GinUse.md)
+[BACK](../GolangGin.md)

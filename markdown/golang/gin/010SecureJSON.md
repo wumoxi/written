@@ -50,4 +50,4 @@ while(1);["Golang","javascript","Java","Python","Lua","C","C++","C#","PHP"]
 
 ## 目录
 
-[BACK](../GinUse.md)
+[BACK](../GolangGin.md)

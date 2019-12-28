@@ -186,4 +186,4 @@ $ go run server.go
 
 ## 目录
 
-[BACK](../GinUse.md)
+[BACK](../GolangGin.md)

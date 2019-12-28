@@ -59,4 +59,4 @@ $ curl -XGET "localhost:8080/pure-json"
 
 ## 目录
 
-[BACK](../GinUse.md)
+[BACK](../GolangGin.md)

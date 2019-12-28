@@ -4,20 +4,16 @@
 
 ## Golang
 
-### [Gin框架](markdown/golang/GinUse.md)
+### [Gin框架](markdown/golang/GolangGin.md)
 ### [HTTP标准库](markdown/golang/HTTPStandardLibrary.md)
 ### [HTTP服务器的性能分析](markdown/golang/HTTPServerPerformanceAnalysis.md)
 ### [HTML文档操作](https://www.flysnow.org/2018/01/20/golang-goquery-examples-selector.html)
-### [Golang查看文档](markdown/golang/GolangCheckViewDocument.md)
 ### [分布式系统特点](markdown/golang/FeatruesOfDistributedSystem.md)
 ### [JsonRPC简单使用](markdown/golang/JSONRPCSampleUse.md)
 ### [URL去重方式](markdown/golang/URLDeduplication.md)
-### [Golang变量注意点](markdown/golang/GolangVariableNote.md)
-### [Golang指针注意点](markdown/golang/GolangPointerNote.md)
-### [Golang日期和时间注意点](markdown/golang/GolangTimeNote.md)
-### [Golang迭代结构for注意点](markdown/golang/GolangFor.md)
-### [Golang迭代结构for-range注意点](markdown/golang/GolangForRange.md)
 ### [Golang关于反射的使用案例](markdown/golang/GolangReflectCase.md)
+### [Golang注意点](markdown/golang/GolangNotice.md)
+### [Golang查看文档](markdown/golang/GolangCheckViewDocument.md)
 ### [Golang格式化输出](markdown/golang/GolangFormatOutput.md)
 ### [Golang字符串处理](markdown/golang/GolangStringProcess.md)
 ### [Golang中int和int64是相同类型吗？](markdown/golang/GolangInt64.md)

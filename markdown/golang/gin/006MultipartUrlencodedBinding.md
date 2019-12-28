@@ -68,4 +68,4 @@ $ curl --form username="wumoxi" --form password="secretwumoxi" -XPOST "localhost
 
 ## 目录
 
-[BACK](../GinUse.md)
+[BACK](../GolangGin.md)
