@@ -84,31 +84,6 @@ fib(9) is: 55
 fib(10) is: 89
 ```
 
-## 使用递归函数从 10 打印到 1
-
-```go
-package main
-
-import "fmt"
-
-func main() {
-	out(10)
-}
-
-func out(n int) {
-	if n > 0 {
-		fmt.Printf("%d ", n)
-		n--
-		out(n)
-	}
-}
-```
-
-程序输出如下
-
-```shell
-10 9 8 7 6 5 4 3 2 1 
-```
 
 ## 阶乘
 
@@ -227,6 +202,32 @@ factorial(26) is: 403291461126605635584000000
 factorial(27) is: 10888869450418352160768000000
 factorial(28) is: 304888344611713860501504000000
 factorial(29) is: 8841761993739701954543616000000
+```
+
+## 使用递归函数从 10 打印到 1
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	out(10)
+}
+
+func out(n int) {
+	if n > 0 {
+		fmt.Printf("%d ", n)
+		n--
+		out(n)
+	}
+}
+```
+
+程序输出如下
+
+```shell
+10 9 8 7 6 5 4 3 2 1 
 ```
 
 ## 目录
