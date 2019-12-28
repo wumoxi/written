@@ -108,4 +108,4 @@ index	 int(rune)	 rune		 char	 bytes
 _**敲黑板请注意了：表情存储到 MYSQL，如果使用`utf8`字符编码进行存储，存储的数据不完整，需要使用`utf8mb4`字符编码才可以完整存储！**_
 
 ## 目录
-[Back](../../../README.md)
+[Back](../GolangNotice.md)
