@@ -8,6 +8,7 @@
 #### [Golang『bread与continue』注意点](notice/GolangBreakAndContinueNotice.md)
 #### [Golang『递归』注意点](notice/GolangRecursiveNotice.md)
 #### [Golang『闭包』注意点](notice/GolangClosureNotice.md)
+#### [Golang通过『内存缓存』来提升性能](notice/GolangMomoryCacheNotice.md)
 
 ## 目录
 [Back](../../README.md)
