@@ -11,7 +11,7 @@ import "fmt"
 
 func main() {
 	for i := 0; i <= 10; i++ {
-		fmt.Printf("fib(%d) is: %d\n", i, fib(i))
+		fmt.Printf("fib(%02d) is: %d\n", i, fib(i))
 	}
 }
 
@@ -26,16 +26,16 @@ func fib(n int) int {
 程序输出0到10之间的斐波那契数如下
 
 ```shell
-fib(0) is: 1
-fib(1) is: 1
-fib(2) is: 2
-fib(3) is: 3
-fib(4) is: 5
-fib(5) is: 8
-fib(6) is: 13
-fib(7) is: 21
-fib(8) is: 34
-fib(9) is: 55
+fib(00) is: 1
+fib(01) is: 1
+fib(02) is: 2
+fib(03) is: 3
+fib(04) is: 5
+fib(05) is: 8
+fib(06) is: 13
+fib(07) is: 21
+fib(08) is: 34
+fib(09) is: 55
 fib(10) is: 89
 ```
 

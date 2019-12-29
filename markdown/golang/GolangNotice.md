@@ -7,6 +7,7 @@
 #### [Golang『迭代结构for-range』注意点](notice/GolangForRangeNotice.md)
 #### [Golang『bread与continue』注意点](notice/GolangBreakAndContinueNotice.md)
 #### [Golang『递归』注意点](notice/GolangRecursiveNotice.md)
+#### [Golang『闭包』注意点](notice/GolangClosureNotice.md)
 
 ## 目录
 [Back](../../README.md)
