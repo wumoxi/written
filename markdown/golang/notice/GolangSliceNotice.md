@@ -178,8 +178,10 @@ import "fmt"
 
 func main() {
 	s := []string{"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"}
-	fmt.Printf("Remove before of slice: %v\n", s)
-	fmt.Printf("Remove after of slice: %v\n", RemoveStringSlice(s, 1, 2))
+	fmt.Printf("Remove before of slice: %v, length: %d\n", s, len(s))
+
+	s = RemoveStringSlice(s, 1, 2)
+	fmt.Printf("Remove after of slice: %v, length: %d\n", s, len(s))
 }
 
 // RemoveStringSlice删除切片元素
@@ -195,8 +197,8 @@ func RemoveStringSlice(src []string, start, end int) []string {
 程序输出结果如下
 
 ```shell
-Remove before of slice: [1 2 3 4 5 6 7 8 9 10]
-Remove after of slice: [1 3 4 5 6 7 8 9 10]
+Remove before of slice: [1 2 3 4 5 6 7 8 9 10], length: 10
+Remove after of slice: [1 3 4 5 6 7 8 9 10], length: 9
 ```
 
 ## 目录
