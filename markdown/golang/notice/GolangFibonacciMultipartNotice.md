@@ -309,9 +309,9 @@ func main() {
 
 // generateSectionIntSliceOfOrderly生成指定范围内的有序整型切片
 func generateSectionIntSliceOfOrderly(min, max int, step int) []int {
-	result := make([]int, 0, max)
+	result := make([]int, max, max)
 	for i := min; i < max; i += step {
-		result = append(result, i)
+		result[i] = i
 	}
 	return result
 }
