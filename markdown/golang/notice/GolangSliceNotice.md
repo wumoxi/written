@@ -57,14 +57,17 @@ import "fmt"
 
 func main() {
 	s := []int{1, 2, 3}
-	fmt.Printf("value: %+v, length:%d, capacity: %d\n", s, len(s), cap(s))
-	s = extendedSliceLength(s, 2)
-	fmt.Printf("value: %+v, length:%d, capacity: %d\n", s, len(s), cap(s))
-	s = extendedSliceLength(s, 4)
-	fmt.Printf("value: %+v, length:%d, capacity: %d\n", s, len(s), cap(s))
+	fmt.Printf("value of slice: %+v, length:%d, capacity: %d\n", s, len(s), cap(s))
+
+	s = ExtendedSliceLength(s, 2)
+	fmt.Printf("value of slice: %+v, length:%d, capacity: %d\n", s, len(s), cap(s))
+
+	s = ExtendedSliceLength(s, 4)
+	fmt.Printf("value of slice: %+v, length:%d, capacity: %d\n", s, len(s), cap(s))
 }
 
-func extendedSliceLength(s []int, factor int) []int {
+// ExtendedSliceLength扩展切片的长度
+func ExtendedSliceLength(s []int, factor int) []int {
 	ns := make([]int, len(s)*factor)
 	copy(ns, s)
 	s = ns
@@ -75,9 +78,9 @@ func extendedSliceLength(s []int, factor int) []int {
 程序输出如下
 
 ```shell
-value: [1 2 3], length:3, capacity: 3
-value: [1 2 3 0 0 0], length:6, capacity: 6
-value: [1 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0], length:24, capacity: 24
+value of slice: [1 2 3], length:3, capacity: 3
+value of slice: [1 2 3 0 0 0], length:6, capacity: 6
+value of slice: [1 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0], length:24, capacity: 24
 ```
 
 
