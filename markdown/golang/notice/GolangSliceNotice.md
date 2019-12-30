@@ -140,8 +140,7 @@ func main() {
 func InsertStringSlice(dst []string, data []string, index int) []string {
 	if index >= 0 && index < len(dst) {
 		dl := len(data)
-		nl := len(dst) + dl
-		n := make([]string, nl)
+		n := make([]string, len(dst)+dl)
 
 		prefix := dst[:index]
 		pl := len(prefix)
