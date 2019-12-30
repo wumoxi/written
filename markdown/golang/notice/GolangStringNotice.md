@@ -41,15 +41,18 @@ reverse after of string: 1438军放解民人国中
 
 ```go
 package main
+
 import (
 	"fmt"
 	"unicode/utf8"
 )
+
 func main() {
 	s := "中国人民解放军8341"
 	fmt.Printf("reverse before of string: %s\n", s)
 	fmt.Printf("reverse after of string: %s\n", ReverseStr(s))
 }
+
 // ReverseStr反转字符串
 func ReverseStr(s string) string {
 	ns := make([]rune, len(s))
