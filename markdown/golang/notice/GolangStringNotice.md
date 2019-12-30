@@ -72,6 +72,38 @@ reverse before of string: 中国人民解放军8341
 reverse after of string: 1438军放解民人国中
 ```
 
+### 通过rune切片反转字符串
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	s := []rune("中国人民解放军8341")
+	fmt.Printf("reverse before of string: %s\n", string(s))
+	fmt.Printf("reverse after of string: %s\n", ReverseStr(s))
+}
+
+// ReverseStr反转字符串
+func ReverseStr(p []rune) string {
+	ns := make([]rune, len(p))
+	for len(p) > 0 {
+		var lst rune
+		lst, p = p[len(p)-1], p[:len(p)-1]
+		ns = append(ns, lst)
+	}
+	return string(ns)
+}
+```
+
+程序输出如下
+
+```shell
+reverse before of string: 中国人民解放军8341
+reverse after of string: 1438军放解民人国中
+```
+
 
 ## 目录
 [Back](../GolangNotice.md)
