@@ -118,7 +118,7 @@ After processing: [2 4 6 8 10]
 
 ## 插入切片到另一个切片指定索引位置
 
-写一个函数 InsertStringSlice 将切片插入到另一个切片的指定位置。
+写一个函数 InsertStringSlice 将切片插入到另一个切片的指定索引位置。
 
 ```go
 package main
