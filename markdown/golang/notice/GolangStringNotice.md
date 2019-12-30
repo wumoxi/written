@@ -140,5 +140,35 @@ split before of string: 中国人民解放军8341
 split after of string, prefix: 中国人民解放军, suffix: 8341
 ```
 
+## 对半反转字符串
+
+假设有字符串 str，那么 str[len(str)/2:] + str[:len(str)/2] 的结果是什么？
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	s := "中国人民解放军8341"
+	fmt.Printf("reverse before of string: %s\n", s)
+
+	s = ReverseStrByMiddlePosition(s)
+	fmt.Printf("reverse after of string: %s\n", s)
+}
+
+func ReverseStrByMiddlePosition(s string) string {
+	str := []rune(s)
+	return string(str[len(str)/2:]) + string(str[:len(str)/2])
+}
+```
+
+程序输出如下
+
+```shell
+reverse before of string: 中国人民解放军8341
+reverse after of string: 放军8341中国人民解
+```
+
 ## 目录
 [Back](../GolangNotice.md)
