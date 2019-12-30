@@ -104,6 +104,39 @@ reverse before of string: 中国人民解放军8341
 reverse after of string: 1438军放解民人国中
 ```
 
+## 分割字符串
+
+### 通过指定索引分割字符串
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	s := "中国人民解放军8341"
+	fmt.Printf("split before of string: %s\n", s)
+
+	prefix, suffix := SplitStrByIndex(s, 7)
+	fmt.Printf("split after of string, prefix: %s, suffix: %s\n", prefix, suffix)
+}
+
+// SplitStrByIndex 通过索引分割字符串
+func SplitStrByIndex(str string, index int) (prefix, suffix string) {
+	s := []rune(str)
+	if index >= 0 && index < len(s) {
+		prefix = string(s[:index])
+		suffix = string(s[index:])
+	}
+	return
+}
+```
+程序输出如下
+
+```shell
+split before of string: 中国人民解放军8341
+split after of string, prefix: 中国人民解放军, suffix: 8341
+```
 
 ## 目录
 [Back](../GolangNotice.md)
