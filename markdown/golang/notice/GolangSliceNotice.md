@@ -133,10 +133,14 @@ import "fmt"
 func main() {
 	s := []string{"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"}
 	d := []string{"8859", "8868"}
+	fmt.Printf("Insert before of slice: %v, length: %d\n", s, len(s))
+
 	s = InsertStringSlice(s, d, len(s)-1)
 	fmt.Printf("Insert after of slice: %v, length: %d\n", s, len(s))
+
 	s = InsertStringSlice(s, d, 0)
 	fmt.Printf("Insert after of slice: %v, length: %d\n", s, len(s))
+
 	s = InsertStringSlice(s, d, -1)
 	fmt.Printf("Insert after of slice: %v, length: %d\n", s, len(s))
 }
@@ -166,6 +170,7 @@ func InsertStringSlice(dst []string, data []string, index int) []string {
 程序输出结果如下
 
 ```shell
+Insert before of slice: [1 2 3 4 5 6 7 8 9 10], length: 10
 Insert after of slice: [1 2 3 4 5 6 7 8 9 8859 8868 10], length: 12
 Insert after of slice: [8859 8868 1 2 3 4 5 6 7 8 9 8859 8868 10], length: 14
 Insert after of slice: [8859 8868 1 2 3 4 5 6 7 8 9 8859 8868 10], length: 14
