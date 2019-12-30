@@ -2,7 +2,9 @@
 
 ## 反转字符串
 
-### 通过交换法反转字符串
+### 使用一个变量
+
+#### 通过交换法反转字符串
 
 ```go
 package main
@@ -33,7 +35,9 @@ reverse before of string: 中华人民共和国解放军8341
 reverse after of string: 1438军放解国和共民人华中
 ```
 
-### 通过字节切片反转字符串
+### 使用两个变量
+
+#### 通过字节切片反转字符串
 
 ```go
 package main
@@ -68,7 +72,7 @@ reverse before of string: 中国人民解放军8341
 reverse after of string: 1438军放解民人国中
 ```
 
-### 通过字符串反转字符串
+#### 通过字符串反转字符串
 
 ```go
 package main
@@ -103,7 +107,7 @@ reverse before of string: 中国人民解放军8341
 reverse after of string: 1438军放解民人国中
 ```
 
-### 通过rune切片反转字符串
+#### 通过rune切片反转字符串
 
 ```go
 package main
