@@ -135,18 +135,18 @@ func main() {
 	d := []string{"8859", "8868"}
 	fmt.Printf("Insert before of slice: %v, length: %d\n", s, len(s))
 
-	s = InsertStringSlice(s, d, len(s)-1)
+	s = InsertStringSliceV1(s, d, len(s)-1)
 	fmt.Printf("Insert after of slice: %v, length: %d\n", s, len(s))
 
-	s = InsertStringSlice(s, d, 0)
+	s = InsertStringSliceV1(s, d, 0)
 	fmt.Printf("Insert after of slice: %v, length: %d\n", s, len(s))
 
-	s = InsertStringSlice(s, d, -1)
+	s = InsertStringSliceV1(s, d, -1)
 	fmt.Printf("Insert after of slice: %v, length: %d\n", s, len(s))
 }
 
-// InsertStringSlice插入切片到另一个切片指定索引位置
-func InsertStringSlice(dst []string, data []string, index int) []string {
+// InsertStringSliceV1插入切片到另一个切片指定索引位置
+func InsertStringSliceV1(dst []string, data []string, index int) []string {
 	if index >= 0 && index < len(dst) {
 		dl := len(data)
 		n := make([]string, len(dst)+dl)
@@ -162,6 +162,14 @@ func InsertStringSlice(dst []string, data []string, index int) []string {
 		copy(n[pl+dl:], suffix)
 
 		return n
+	}
+	return dst
+}
+
+// InsertStringSliceV2插入切片到另一个切片指定索引位置
+func InsertStringSliceV2(dst []string, data []string, index int) []string {
+	if index >= 0 && index < len(dst) {
+		dst = append(dst[:index], append(data, dst[index:]...)...)
 	}
 	return dst
 }
