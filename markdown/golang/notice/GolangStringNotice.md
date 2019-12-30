@@ -2,6 +2,37 @@
 
 ## 反转字符串
 
+### 通过交换法返回字符串
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	s := "中华人民共和国解放军8341"
+	fmt.Printf("reverse before of string: %s\n", s)
+	fmt.Printf("reverse after of string: %s\n", ReverseStr([]rune(s)))
+}
+
+// ReverseStr反转字符串
+func ReverseStr(s []rune) string {
+	for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
+		s[i], s[j] = s[j], s[i]
+	}
+	return string(s)
+}
+```
+
+程序输出如下
+
+```shell
+reverse before of string: 中华人民共和国解放军8341
+reverse after of string: 1438军放解国和共民人华中
+```
+
 ### 通过字节切片反转字符串
 
 ```go
