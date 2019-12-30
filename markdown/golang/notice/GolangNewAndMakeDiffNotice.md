@@ -8,6 +8,7 @@ new(T) 为每个新的类型T分配一片内存，初始化为T的类型零值�
 
 make(T) 返回一个类型为 T 的初始值，它只适用于3种内建的引用类型：切片、map 和 channel。
 
+**换言之，new 函数分配内存，make 函数初始化；**
 
 ## 目录
 [Back](../GolangNotice.md)
