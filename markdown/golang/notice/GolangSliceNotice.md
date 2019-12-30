@@ -92,13 +92,15 @@ import "fmt"
 
 func main() {
 	s := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-	fmt.Printf("Before processing: %+v\n", s)
+	fmt.Printf("Filter before of slice: %+v, length: %d\n", s, len(s))
+
 	s = Filter(s, func(number int) bool {
 		return number%2 == 0
 	})
-	fmt.Printf("After processing: %+v\n", s)
+	fmt.Printf("Filter after of slice: %+v, length: %d\n", s, len(s))
 }
 
+// Filter过滤切片元素
 func Filter(s []int, fn func(int) bool) (result []int) {
 	for i := 0; i < len(s); i++ {
 		if fn(s[i]) {
@@ -112,8 +114,8 @@ func Filter(s []int, fn func(int) bool) (result []int) {
 程序输出如下
 
 ```shell
-Before processing: [1 2 3 4 5 6 7 8 9 10]
-After processing: [2 4 6 8 10]
+Filter before of slice: [1 2 3 4 5 6 7 8 9 10], length: 10
+Filter after of slice: [2 4 6 8 10], length: 5
 ```
 
 ## 插入切片到另一个切片的指定索引位置
