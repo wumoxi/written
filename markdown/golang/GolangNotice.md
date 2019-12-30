@@ -12,6 +12,7 @@
 #### [Golang『斐波那契』多种实现方式](notice/GolangFibonacciMultipartNotice.md)
 #### [Golang『new和make』区别注意点](notice/GolangNewAndMakeDiffNotice.md)
 #### [Golang『切片』注意点](notice/GolangSliceNotice.md)
+#### [Golang『字符串』注意点](notice/GolangStringNotice.md)
 
 ## 目录
 [Back](../../README.md)
