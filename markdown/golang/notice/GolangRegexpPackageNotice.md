@@ -14,7 +14,7 @@ ok, _ := regexp.Match(pat, []byte(searchIn))
 ok, _ := regexp.MatchString(pat, searchIn)
 ```
 
-以下示例为简单模式使用案例
+_**以下示例为简单模式使用案例**_
 
 ```go
 package main
@@ -51,7 +51,7 @@ is matched: false
 
 更多方法中，必须先将正则模式通过 Compile 或 MustCompile 方法返回一个 Regexp 对象。然后我们将掌握一些匹配，查找，替换相关的功能。
 
-以下为复杂模式使用案例
+_**以下为复杂模式使用案例**_
 
 ```go
 package main
