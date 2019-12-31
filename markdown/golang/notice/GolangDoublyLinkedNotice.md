@@ -23,7 +23,7 @@ func main() {
 	}
 
 	// 遍历列表并打印其内容(向前遍历)。
-	// list.Front() 获取链表尾部指针
+	// list.Back() 获取链表尾部指针
 	for element := lst.Back(); element != nil; element = element.Prev() {
 		fmt.Println(element.Value)
 	}
