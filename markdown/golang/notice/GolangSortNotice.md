@@ -36,3 +36,6 @@ func BubbleSort(s []int) []int {
 reverse before of string: [8 2 3 5 6 1 9]
 reverse after of string: [1 2 3 5 6 8 9]
 ```
+
+## 目录
+[Back](../GolangNotice.md)
