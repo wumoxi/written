@@ -105,7 +105,6 @@ func (s *Stack) Push(val int) {
 	s.Bucket = append(s.Bucket, val)
 }
 
-
 func (s *Stack) Pop() (item int, exist bool) {
 	if len(s.Bucket) > 0 {
 		this := &(*s)
@@ -181,7 +180,6 @@ type Stack struct {
 func (s *Stack) Push(val int) {
 	s.Bucket = append(s.Bucket, val)
 }
-
 
 func (s *Stack) Pop() (item int, exist bool) {
 	if len(s.Bucket) > 0 {
