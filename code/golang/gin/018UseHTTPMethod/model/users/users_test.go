@@ -59,11 +59,11 @@ func getAll(t *testing.T) {
 		t.Errorf("result shuld %d, got: %d\n", len(expected), len(users))
 	}
 
-	users, ok := users.GetAll().(*Users)
+	users, ok := users.GetAll().(Users)
 	if !ok {
 		t.Errorf("invalid parameter type")
 	}
-	for id, user := range *users {
+	for id, user := range users {
 		if id == 1 {
 			if *user != *expected[id] {
 				t.Errorf("result shuld %+v, got: %+v\n", *user, *expected[id])
@@ -148,11 +148,11 @@ func del(t *testing.T) {
 	}
 
 	// 输出当前所有用户
-	users, ok := users.GetAll().(*Users)
+	users, ok := users.GetAll().(Users)
 	if !ok {
 		fmt.Printf("invalied parameter type")
 	}
-	for id, user := range *users {
+	for id, user := range users {
 		// 肯定只会输出一条记录因为在这个测试中一共添加了两个用户，一直对ID为1的记录进行操作，所以结果一定是：
 		// user id: 2, user: &{Id:2 Name:李四 Email:lisi@foxmail.com Phone:13792998888 Sex:male Age:25 Address:北京市东城区永外大街32号.}
 		t.Logf("user id: %d, user: %+v\n", id, *user)

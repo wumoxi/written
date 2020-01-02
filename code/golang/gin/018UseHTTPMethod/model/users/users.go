@@ -29,22 +29,22 @@ func (u *User) userToInterface() interface{} {
 type Users map[int]*User
 
 // usersToInterface将所有用户类型转换为接口类型
-func (u *Users) usersToInterface() interface{} {
+func (u Users) usersToInterface() interface{} {
 	var o interface{} = u
 	return o
 }
 
 // nextUserId获取一下个将要添加用户的ID
-func (u *Users) nextUserId() int {
-	if len(*u) == 0 {
+func (u Users) nextUserId() int {
+	if len(u) == 0 {
 		return 1
 	}
-	return len(*u) + 1
+	return len(u) + 1
 }
 
 // checkUserExists检测用户是否已经存在
-func (u *Users) checkUserExists(name string) bool {
-	for _, user := range *u {
+func (u Users) checkUserExists(name string) bool {
+	for _, user := range u {
 		if user.Name == name {
 			return true
 		}
@@ -53,20 +53,20 @@ func (u *Users) checkUserExists(name string) bool {
 }
 
 // GetAll获取所有用户
-func (u *Users) GetAll() interface{} {
+func (u Users) GetAll() interface{} {
 	return u.usersToInterface()
 }
 
 // GetOne获取一个用户
-func (u *Users) GetOne(id int) (interface{}, error) {
-	if user, ok := (*u)[id]; ok {
+func (u Users) GetOne(id int) (interface{}, error) {
+	if user, ok := u[id]; ok {
 		return user.userToInterface(), nil
 	}
 	return nil, errors.New("user does not exist")
 }
 
 // Add添加一个用户
-func (u *Users) Add(params interface{}) (interface{}, error) {
+func (u Users) Add(params interface{}) (interface{}, error) {
 	user, ok := params.(*User)
 	if !ok {
 		return nil, errors.New("invalid parameter type")
@@ -79,13 +79,13 @@ func (u *Users) Add(params interface{}) (interface{}, error) {
 	}
 
 	user.Id = u.nextUserId()
-	(*u)[user.Id] = user
+	u[user.Id] = user
 	return user.userToInterface(), nil
 }
 
 // Change修改一个用户
-func (u *Users) Change(id int, params interface{}) (interface{}, error) {
-	user, ok := (*u)[id]
+func (u Users) Change(id int, params interface{}) (interface{}, error) {
+	user, ok := u[id]
 	if !ok {
 		return nil, errors.New("user does not exist")
 	}
@@ -100,8 +100,8 @@ func (u *Users) Change(id int, params interface{}) (interface{}, error) {
 }
 
 // Modify修改一个用户
-func (u *Users) Modify(id int, params interface{}) (interface{}, error) {
-	user, ok := (*u)[id]
+func (u Users) Modify(id int, params interface{}) (interface{}, error) {
+	user, ok := u[id]
 	if !ok {
 		return nil, errors.New("user does not exist")
 	}
@@ -112,18 +112,18 @@ func (u *Users) Modify(id int, params interface{}) (interface{}, error) {
 }
 
 // Delete删除一个用户
-func (u *Users) Delete(id int) (bool, error) {
-	_, ok := (*u)[id]
+func (u Users) Delete(id int) (bool, error) {
+	_, ok := u[id]
 	if !ok {
 		return false, errors.New("user does not exist")
 	}
-	users := *u
+	users := u
 	delete(users, id)
 	return true, nil
 }
 
 // Options获取信息，关于用户资源的哪些属性是客户端可以改变的
-func (u *Users) Options() (map[string]interface{}, error) {
+func (u Users) Options() (map[string]interface{}, error) {
 	// 通过标签值获取字段名数组
 	fieldsByChange, err := toolkit.GetFieldsNameByTag(User{}, "change")
 	if err != nil {
@@ -143,7 +143,7 @@ func (u *Users) Options() (map[string]interface{}, error) {
 }
 
 // Head返回用户资源元信息
-func (u *Users) Head() map[string]string {
+func (u Users) Head() map[string]string {
 	marshal, _ := json.Marshal(u.GetAll())
 	l := len(marshal)
 	h := make(map[string]string)
