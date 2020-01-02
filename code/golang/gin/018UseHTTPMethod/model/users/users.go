@@ -125,13 +125,13 @@ func (u *Users) Delete(id int) (bool, error) {
 // Options获取信息，关于用户资源的哪些属性是客户端可以改变的
 func (u *Users) Options() (map[string]interface{}, error) {
 	// 通过标签值获取字段名数组
-	fieldsByChange, err := toolkit.GetFieldNameByTagValue(User{}, "change")
+	fieldsByChange, err := toolkit.GetFieldsNameByTag(User{}, "change")
 	if err != nil {
 		return nil, err
 	}
 
 	// 通过标签值获取字段名数组
-	fieldsByModify, err := toolkit.GetFieldNameByTagValue(User{}, "modify")
+	fieldsByModify, err := toolkit.GetFieldsNameByTag(User{}, "modify")
 	if err != nil {
 		return nil, err
 	}
