@@ -67,3 +67,5 @@
 
 ### [Yii2接入PayPal支付](markdown/php/pay/yii2_join_up_paypal.md)
 ### [Laravel项目重新部署安装依赖](markdown/php/composer/LaravelProjectRearrangeInstallationDependencies.md)
+
+![](https://icherries.oss-cn-beijing.aliyuncs.com/Snip20191225_4.png)
