@@ -13,7 +13,7 @@
 #### [Golang『new和make』区别注意点](notice/GolangNewAndMakeDiffNotice.md)
 #### [Golang『切片』注意点](notice/GolangSliceNotice.md)
 #### [Golang『字符串』注意点](notice/GolangStringNotice.md)
-#### [Golang『格式化字符串』注意点](notice/GolangFormatNotice.md)
+#### [Golang『字符串格式化』注意点](notice/GolangFormatNotice.md)
 #### [Golang『排序』注意点](notice/GolangSortNotice.md)
 #### [Golang『双向链表』注意点](notice/GolangDoublyLinkedNotice.md)
 #### [Golang『unsafe package』注意点](notice/GolangUnsafePackageNotice.md)
