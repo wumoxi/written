@@ -68,4 +68,7 @@
 ### [Yii2接入PayPal支付](markdown/php/pay/yii2_join_up_paypal.md)
 ### [Laravel项目重新部署安装依赖](markdown/php/composer/LaravelProjectRearrangeInstallationDependencies.md)
 
-![](https://icherries.oss-cn-beijing.aliyuncs.com/Snip20191225_4.png)
+## OSS
+
+### [基于读写权限ACL的权限控制](https://help.aliyun.com/document_detail/100676.html?spm=a2c4g.11186623.2.18.4c314c071HLPZl)
+### [RAM子账户授权OSS单个bucket中部分文件的访问权限](https://help.aliyun.com/knowledge_detail/39553.html?spm=a2c4g.11186623.4.6.7fdd4c074nVFcA)
