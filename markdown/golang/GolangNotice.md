@@ -18,6 +18,7 @@
 #### [Golang『unsafe package』注意点](notice/GolangUnsafePackageNotice.md)
 #### [Golang『regexp package』注意点](notice/GolangRegexpPackageNotice.md)
 #### [Golang『big package』注意点](notice/GolangBigPackageNotice.md)
+#### [Golang『格式化』字符串](notice/GolangFormatNotice.md)
 
 ## 目录
 [Back](../../README.md)
