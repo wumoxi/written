@@ -6,7 +6,7 @@ Go 的接口提高了代码的分离度，改善了代码的复用性，使得�
 
 ## 泛型
 
-通过空接口和类型断言，现在我们可以写一个可以应用于许多类型的 泛型 的 map 函数，为 int 和 string 构建一个把 int 值加倍和将字符串值与其自身连接（译者注：即"abc"变成"abcabc"）的 map 函数 mapFunc。为了可读性可以定义一个 interface{} 的别名，比如：type obj interface{}。
+通过空接口和类型断言，现在我们可以写一个可以应用于许多类型的 泛型 的 map 函数，为 int 和 string 构建一个把 int 值加倍和将字符串值与其自身连接（译者注：即"abc"变成"abcabc"）的 map 函数 mapFunc。为了可读性可以定义一个 interface{} 的别名，比如：type o interface{}。
 
 ```go
 package main
