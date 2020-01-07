@@ -203,13 +203,10 @@ type Stacker interface {
 	Pop() (interface{}, error)
 }
 
-type Stack struct {
-	Id     int           // 索引表示第一个空闲的位置
-	Bucket []interface{} // 栈数据桶
-}
+type Stack []interface{}
 
 func (s *Stack) Len() int {
-	return len(s.Bucket)
+	return len(*s)
 }
 
 func (s *Stack) IsEmpty() bool {
@@ -217,14 +214,13 @@ func (s *Stack) IsEmpty() bool {
 }
 
 func (s *Stack) Push(item interface{}) {
-	s.Bucket = append(s.Bucket, item)
+	*s = append(*s, item)
 }
 
 func (s *Stack) Pop() (item interface{}, err error) {
 	if !s.IsEmpty() {
-		item = s.Bucket[len(s.Bucket)-1]
-		s.Bucket = s.Bucket[:len(s.Bucket)-1]
-
+		item = (*s)[len(*s)-1]
+		*s = (*s)[:len(*s)-1]
 		return item, nil
 	}
 	return item, errors.New("stack is empty")
@@ -232,7 +228,7 @@ func (s *Stack) Pop() (item interface{}, err error) {
 
 func (s *Stack) String() (str string) {
 	if !s.IsEmpty() {
-		for i, v := range s.Bucket {
+		for i, v := range *s {
 			if len(str) != 0 {
 				str += " "
 			}
