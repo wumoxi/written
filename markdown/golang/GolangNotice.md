@@ -21,6 +21,7 @@
 #### [Golang『big package』注意点](notice/GolangBigPackageNotice.md)
 #### [Golang『栈』简单实现](notice/GolangStackNotice.md)
 #### [Golang『接口』注意点](notice/GolangInterfaceNotice.md)
+#### [Golang『结构体、集合和高阶函数』注意点](notice/GolangStructGatherAndHigherOrderFunction.md)
 
 ## 目录
 [Back](../../README.md)
