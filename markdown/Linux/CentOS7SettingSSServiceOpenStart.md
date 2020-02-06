@@ -16,7 +16,7 @@ ExecStart=/usr/bin/ssserver -c /etc/shadowsocks.json
 WantedBy=multi-user.target
 ```
 
-注意：
+**_注意：_**
 
 这里的 `ExecStart` 需要根据你自己的SS服务安装路径进行配置(不可以只写一个服务名，如：`ssserver`, 需要也绝对路径哦，谨记！)，可以通过 `which ssserver` 进行查看具体的SS服务安装路径，参数 `-c` 指定的是SS服务配置文件所在路径！
 
