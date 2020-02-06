@@ -1,6 +1,6 @@
 # CentOS7设置SS服务开机启动
 
-## 配置自启动
+## 配置服务到 systemctl 服务管理器
 
 新建启动脚本文件 `/etc/systemd/system/shadowsocks.service`，内容如下：
 
