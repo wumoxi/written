@@ -274,3 +274,220 @@ file path of the base: products2.txt
 
 ~~这个地方留坑回头回填！~~
 
+## 写文件
+
+请看以下程序：
+
+```go
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+)
+
+func main() {
+	// var outputWriter *bufio.Writer
+	// var outputFile *os.File
+	// var outputError os.Error
+	// var outputString string
+
+	// Open the file(打开文件)
+	outputFile, outputError := os.OpenFile("code/golang/read_writer_data/file_read_writer/output.dat", os.O_WRONLY|os.O_CREATE, 0666)
+	if outputError != nil {
+		fmt.Printf("An error occurred with file opening or creation\n")
+		return
+	}
+
+	// Close the open file(关闭文件)
+	defer outputFile.Close()
+
+	outputWriter := bufio.NewWriter(outputFile)
+	outputString := "Hello world\n"
+
+	// Write multiple times through the loop to the write buffer (通过循环写入多次到写入缓冲)
+	for i := 0; i < 10; i++ {
+		times := strconv.Itoa(i)
+		outputWriter.WriteString(times + ". " + outputString)
+	}
+
+	// Flush buffer data to a file(将缓冲区数据冲洗到文件)
+	outputWriter.Flush()
+}
+```
+
+运行程序输出一个名称为 `output.dat` 的文件，并且文件内容为：
+
+```shell
+0. Hello world
+1. Hello world
+2. Hello world
+3. Hello world
+4. Hello world
+5. Hello world
+6. Hello world
+7. Hello world
+8. Hello world
+9. Hello world
+```
+
+除了文件句柄，我们还需要 `bufio` 的 `writer`。我们以只写模式打开文件 `output.dat`, 如果文件不存在则自动创建：
+
+```go
+outputFile, outputError := os.OpenFile("code/golang/read_writer_data/file_read_writer/output.dat", os.O_WRONLY|os.O_CREATE, 0666)
+```
+
+可以看到，`OpenFile` 函数有三个参数：文件名，一个或多个标志（使用逻辑运算符"|"连接），使用的文件权限。
+
+我们通常会用到以下标志：
+
+- `os.O_RDONLY`：只读
+- `os.O_WRONLY`：只写
+- `os.O_CREATE`：创建(如果指定文件不存在，就创建该文件)。
+- `os.O_TRUNC`：截断(如果指定文件已存在，就将该文件的长度截为0)。
+
+在读文件的时候，文件的权限是被忽略的，所以在使用 `OpenFile` 时传入的第三个参数可以用0。而在写文件时，不管是 `Unix` 还是 `Windows`，都需要使用 `0666`。
+
+然后，我们创建一个写入器（缓冲区）对象：
+
+```go
+outputWriter := bufio.NewWriter(outputFile)
+```
+
+接着，使用一个 for 循环，将字符串写入缓冲区，写 10 次：`outputWriter.WriteString(times + ". " + outputString)`。
+
+缓冲区的内容紧接着被完全写入文件：`outputWriter.Flush()`。
+
+如果写入的东西很简单，我们可以使用 `fmt.Fprintf(outputFile, "Some test data.\n")` 直接将内容写入文件。`fmt` 包里的 `F` 开头的 `Print` 函数可以直接写入任何 `io.Writer`，包括文件（请参考章节[12.8](https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/12.8.md))。
+
+下面示例程序展示了不使用 `fmt.FPrintf` 函数，使用其他函数如何写文件：
+
+```go
+package main
+
+import (
+	"fmt"
+	"os"
+)
+
+func main() {
+	os.Stdout.WriteString("hello world\n")
+	file, err := os.OpenFile("test.dat", os.O_WRONLY|os.O_CREATE, 0666)
+	if err != nil {
+		fmt.Printf("An error occurred with file opening or creation: %s\n", err)
+		return
+	}
+	defer file.Close()
+	file.WriteString("hello, world in a file\n")
+}
+```
+
+使用 `os.Stdout.WriteString("hello world\n")`，我们可以输出到屏幕。
+
+我们以只写模式创建或打开文件 "test.dat"，并且处理了可能发生的错误：`file, err := os.OpenFile("test.dat", os.O_WRONLY|os.O_CREATE, 0666)`。
+
+我们不使用缓冲区，直接将内容写入文件：`file.WriteString()`
+
+### 练习：使用结构化写入文件
+
+> 这是一个独立的练习，但是同时也是为[章节15.4](https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/15.4.md)做准备。
+
+程序中的数据结构如下，是一个包含以下字段的结构：
+
+```go
+type Page struct {
+	Title string
+	Body  []byte
+}
+```
+
+请给这个结构编写一个 `save` 方法，将 Title 作为文件名、Body 作为文件内容，写入到文本文件中。
+
+```go
+// Save the structure data to a text file
+func (p *Page) save() (err error) {
+	// Check that the title is empty
+	if p.Title == "" {
+		return errors.New("filename can't be empty")
+	}
+	return ioutil.WriteFile(fullTitle(p.Title), p.Body, 0666)
+}
+```
+
+再编写一个 `load` 函数，接收的参数的字符串是字符串 `title`, 该函数读取出与 `title` 对应的文本文件，使用 `*Page` 作为参数，因为这个结构可能相当巨大，我们不想在内存中拷贝它。请使用 `ioutil` 包里的函数（参考[章节12.2.1](https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/12.2.md#1221-%E8%AF%BB%E6%96%87%E4%BB%B6)）
+
+```go
+// Read a file content
+func (p *Page) load(title string) (err error) {
+	p.Title = title
+	p.Body, err = ioutil.ReadFile(fullTitle(p.Title))
+	return err
+}
+```
+
+完整的文件内容如下：
+
+```go
+package main
+
+import (
+	"errors"
+	"fmt"
+	"io/ioutil"
+)
+
+const filename = "write_structure_data"
+
+type Page struct {
+	Title string
+	Body  []byte
+}
+
+// Save the structure data to a text file
+func (p *Page) save() (err error) {
+	// Check that the title is empty
+	if p.Title == "" {
+		return errors.New("filename can't be empty")
+	}
+	return ioutil.WriteFile(fullTitle(p.Title), p.Body, 0666)
+}
+
+// Gets filename
+func fullTitle(title string) string {
+	return title + ".txt"
+}
+
+// Read a file content
+func (p *Page) load(title string) (err error) {
+	p.Title = title
+	p.Body, err = ioutil.ReadFile(fullTitle(p.Title))
+	return err
+}
+
+func main() {
+	page := new(Page)
+	page.Title = filename
+	page.Body = []byte("hello world!\nmy email address is: wu.shaohua@foxmail.com\n")
+
+	// Written to the file
+	err := page.save()
+	if err != nil {
+		fmt.Printf("save struct data to text file error: %s\n", err)
+		return
+	}
+	fmt.Printf("save struct data to text file successfully!\n")
+
+	// Read the file
+	err = page.load(filename)
+	if err != nil {
+		fmt.Printf("read the file error: %s\n", err)
+		return
+	}
+	fmt.Println("Read the file contents as following:")
+	fmt.Println(string(page.Body))
+}
+```
+
+
