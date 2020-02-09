@@ -11,7 +11,7 @@ func cat(f *os.File) {
 		case nr < 0:
 			fmt.Fprintf(os.Stderr, "cat: error reading: %s\n", err.Error())
 			os.Exit(1)
-		case nr == 0:
+		case nr == 0:   // EOF
 			return
 		case nr > 0:
 			if nw, ew := os.Stdout.Write(buff[0:nr]); nw != nr {
@@ -42,7 +42,7 @@ func cat(f *os.File) {
 		case nr < 0:
 			fmt.Fprintf(os.Stderr, "cat: error reading: %s\n", err.Error())
 			os.Exit(1)
-		case nr == 0:
+		case nr == 0:  // EOF
 			return
 		case nr > 0:
 			if nw, ew := os.Stdout.Write(buff[0:nr]); nw != nr {
