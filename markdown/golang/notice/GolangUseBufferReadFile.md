@@ -46,7 +46,7 @@ func main() {
 
 ## 练习：为显示文件内容添加行号
 
-扩展上面的例子，使用 `flag` 添加一个选项，目的是为每一行头部加入一个行号。使用 `go run cat.go -n README.md` 测试输出。
+扩展上面的例子，使用 `flag` 添加一个选项，目的是为每一行头部加入一个行号。在命令行执行 `go run cat.go -n README.md` 测试输出。
 
 ```go
 package main
