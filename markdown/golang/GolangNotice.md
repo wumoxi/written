@@ -24,6 +24,7 @@
 #### [Golang『结构体、集合和高阶函数』注意点](notice/GolangStructGatherAndHigherOrderFunction.md)
 #### [Golang『读取用户的输入』注意点](notice/GolangReadUserInput.md)
 #### [Golang『文件读取』注意点](notice/GolangReadFile.md)
+#### [Golang『文件拷贝』注意点](notice/GolangFileCopy.md)
 
 ## 目录
 [Back](../../README.md)
