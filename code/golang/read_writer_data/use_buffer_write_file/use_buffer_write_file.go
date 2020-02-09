@@ -35,5 +35,6 @@ func main() {
 			return
 		}
 		cat(bufio.NewReader(file))
+		file.Close()
 	}
 }

@@ -38,6 +38,7 @@ func main() {
 			return
 		}
 		cat(bufio.NewReader(file))
+		file.Close()
 	}
 }
 ```
@@ -93,6 +94,7 @@ func main() {
 			return
 		}
 		cat(bufio.NewReader(file))
+		file.Close()
 	}
 }
 ```
