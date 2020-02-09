@@ -34,6 +34,7 @@ func main() {
 		file, err := os.Open(flag.Arg(i))
 		if file == nil {
 			fmt.Fprintf(os.Stderr, "cat: can't open %s: error: %s\n", flag.Arg(i), err)
+			os.Exit(1)
 		}
 		cat(file)
 		file.Close()
