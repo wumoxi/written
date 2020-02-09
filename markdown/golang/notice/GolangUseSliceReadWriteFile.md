@@ -71,3 +71,7 @@ func main() {
 ``` 
 
 这个示例和[Golang『用 buffer读取文件』注意点](https://github.com/wumoxi/written/blob/master/markdown/golang/notice/GolangUseBufferReadFile.md#golang%E7%94%A8-buffer%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E6%B3%A8%E6%84%8F%E7%82%B9) 具有同样的功能。
+
+
+## 目录
+[Back](../GolangNotice.md)
