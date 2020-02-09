@@ -25,6 +25,7 @@
 #### [Golang『读取用户的输入』注意点](notice/GolangReadUserInput.md)
 #### [Golang『文件读取』注意点](notice/GolangReadFile.md)
 #### [Golang『文件拷贝』注意点](notice/GolangFileCopy.md)
+#### [Golang『用 buffer读取文件』注意点](notice/GolangUseBufferReadFile.md)
 
 ## 目录
 [Back](../../README.md)
