@@ -39,7 +39,7 @@ func main() {
 		file, err := os.Open(flag.Arg(i))
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "cat: can't open %s: error: %s\n", flag.Arg(i), err)
-			os.Exit(1)
+			continue
 		}
 		cat(bufio.NewReader(file))
 		file.Close()
