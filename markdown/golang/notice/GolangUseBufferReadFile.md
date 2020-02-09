@@ -15,11 +15,11 @@ import (
 
 func cat(r *bufio.Reader) {
 	for {
-		bytes, err := r.ReadBytes('\n')
+		buff, err := r.ReadBytes('\n')
 		if err == io.EOF {
 			break
 		}
-		fmt.Fprintf(os.Stdout, "%s", bytes)
+		fmt.Fprintf(os.Stdout, "%s", buff)
 	}
 	return
 }
@@ -64,15 +64,15 @@ var isShowLineNumber = flag.Bool("n", false, "show file content of line number")
 func cat(r *bufio.Reader) {
 	var number int64
 	for {
-		bytes, err := r.ReadBytes('\n')
+		buff, err := r.ReadBytes('\n')
 		if err == io.EOF {
 			break
 		}
 		if *isShowLineNumber {
 			number++
-			fmt.Fprintf(os.Stdout, "%5d %s", number, bytes)
+			fmt.Fprintf(os.Stdout, "%5d %s", number, buff)
 		} else {
-			fmt.Fprintf(os.Stdout, "%s", bytes)
+			fmt.Fprintf(os.Stdout, "%s", buff)
 		}
 	}
 	return

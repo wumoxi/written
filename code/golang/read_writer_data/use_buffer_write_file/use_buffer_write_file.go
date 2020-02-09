@@ -10,11 +10,11 @@ import (
 
 func cat(r *bufio.Reader) {
 	for {
-		bytes, err := r.ReadBytes('\n')
+		buff, err := r.ReadBytes('\n')
 		if err == io.EOF {
 			break
 		}
-		fmt.Fprintf(os.Stdout, "%s", bytes)
+		fmt.Fprintf(os.Stdout, "%s", buff)
 	}
 	return
 }
