@@ -416,7 +416,7 @@ func (p *Page) save() (err error) {
 }
 ```
 
-再编写一个 `load` 函数，接收的参数的字符串是字符串 `title`, 该函数读取出与 `title` 对应的文本文件，使用 `*Page` 作为参数，因为这个结构可能相当巨大，我们不想在内存中拷贝它。请使用 `ioutil` 包里的函数（参考[章节12.2.1](https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/12.2.md#1221-%E8%AF%BB%E6%96%87%E4%BB%B6)）
+再编写一个 `load` 函数，接收的参数是字符串 `title`, 该函数读取出与 `title` 对应的文本文件，使用 `*Page` 作为参数，因为这个结构可能相当巨大，我们不想在内存中拷贝它。请使用 `ioutil` 包里的函数（参考[章节12.2.1](https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/12.2.md#1221-%E8%AF%BB%E6%96%87%E4%BB%B6)）
 
 ```go
 // Read a file content
