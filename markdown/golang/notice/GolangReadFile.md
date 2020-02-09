@@ -438,7 +438,7 @@ import (
 	"io/ioutil"
 )
 
-const filename = "write_structure_data"
+const filename = "structure_data"
 
 type Page struct {
 	Title string
