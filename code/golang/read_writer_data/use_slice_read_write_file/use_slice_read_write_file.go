@@ -3,7 +3,6 @@ package main
 import (
 	"flag"
 	"fmt"
-	"io"
 	"os"
 )
 
@@ -33,8 +32,8 @@ func main() {
 
 	for i := 0; i < flag.NArg(); i++ {
 		file, err := os.Open(flag.Arg(i))
-		if err == io.EOF {
-			continue
+		if file == nil {
+			fmt.Fprintf(os.Stderr, "cat: can't open %s: error: %s\n", flag.Arg(i), err)
 		}
 		cat(file)
 		file.Close()

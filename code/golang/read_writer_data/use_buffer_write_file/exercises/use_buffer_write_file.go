@@ -38,8 +38,8 @@ func main() {
 	for i := 0; i < flag.NArg(); i++ {
 		file, err := os.Open(flag.Arg(i))
 		if err != nil {
-			fmt.Fprintf(os.Stderr, "%s: error reading from %s: error: %s\n", os.Args[0], flag.Arg(i), err)
-			return
+			fmt.Fprintf(os.Stderr, "cat: can't open %s: error: %s\n", flag.Arg(i), err)
+			os.Exit(1)
 		}
 		cat(bufio.NewReader(file))
 		file.Close()
