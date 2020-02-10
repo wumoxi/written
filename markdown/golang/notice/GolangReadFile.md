@@ -264,8 +264,6 @@ file path of the base: products2.txt
 
 每行的第一个字段为 title，第二个字段为 price，第三个字段为 quantity。内容的格式基本与示例 [按列读取文件中的数据](./GolangReadFile.md#按列读取文件中的数据) 的相同，除了分隔符改成了分号。请读取出文件的内容，创建一个结构用于存取一行的数据，然后使用结构的切片，并把数据打印出来。
 
-关于解析 CSV 文件，`encoding/csv` 包提供了相应的功能。具体请参考 [http://golang.org/pkg/encoding/csv/](http://golang.org/pkg/encoding/csv/)
-
 具体的实现示例如下：
 
 ```go
@@ -349,6 +347,8 @@ We have read the following books information from the file:
 {"Functional Programming with Go" 56 280}
 {"Go for It" 45.9 356}
 ```
+
+关于解析 CSV 文件，`encoding/csv` 包提供了相应的功能。具体请参考 [http://golang.org/pkg/encoding/csv/](http://golang.org/pkg/encoding/csv/)
 
 ## compress包：读取压缩文件
 
