@@ -30,8 +30,9 @@
 
 ## 引用说明
 
-- 上标「⁰」代表：[《Go 入门指南》](https://github.com/unknwon/the-way-to-go_ZH_CN)
-- 上标「¹」代表：《自我见解》
+上标「⁰」代表：[《Go 入门指南》](https://github.com/unknwon/the-way-to-go_ZH_CN)
+
+上标「¹」代表：《自我见解》
 
 ## 目录
 [Back](../../README.md)
