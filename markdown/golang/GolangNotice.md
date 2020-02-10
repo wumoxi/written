@@ -27,6 +27,7 @@
 #### [Golang『文件拷贝』注意点](notice/GolangFileCopy.md)
 #### [Golang『用 buffer读取文件』注意点](notice/GolangUseBufferReadFile.md)
 #### [Golang『用切片读写文件』注意点](notice/GolangUseSliceReadWriteFile.md)
+#### [Golang『使用接口的实际例子：fmt.Fprintf』注意点](notice/GolangUseInterface.md)
 
 ## 引用说明
 
