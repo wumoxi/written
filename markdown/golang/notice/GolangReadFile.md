@@ -446,7 +446,7 @@ outputWriter := bufio.NewWriter(outputFile)
 
 如果写入的东西很简单，我们可以使用 `fmt.Fprintf(outputFile, "Some test data.\n")` 直接将内容写入文件。`fmt` 包里的 `F` 开头的 `Print` 函数可以直接写入任何 `io.Writer`，包括文件（请参考章节[12.8](https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/12.8.md))。
 
-下面示例程序展示了不使用 `fmt.FPrintf` 函数，使用其他函数如何写文件：
+下面示例程序展示了不使用 `fmt.Fprintf` 函数，使用其他函数如何写文件：
 
 ```go
 package main
