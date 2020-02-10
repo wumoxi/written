@@ -46,7 +46,7 @@ func main() {
 	}
 
 	fmt.Printf("%s\n", buffer.String())
-	err = ioutil.WriteFile(outputFile, []byte(buffer.String()), 0644)
+	err = ioutil.WriteFile(outputFile, buffer.Bytes(), 0644)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Write File Error: %s\n", err)
 	}
