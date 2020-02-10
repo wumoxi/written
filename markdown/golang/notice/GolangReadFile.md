@@ -154,8 +154,8 @@ func main() {
 		}
 		buffer.WriteString(string(block))
 	}
-
-    // Write to file
+	
+	// Write to file
 	fmt.Printf("%s\n", buffer.String())
 	err = ioutil.WriteFile(outputFile, []byte(buffer.String()), 0644)
 	if err != nil {
