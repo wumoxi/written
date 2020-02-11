@@ -45,7 +45,7 @@ func main() {
 	var q Q
 	err = dec.Decode(&q)
 	if err != nil {
-		log.Fatalf("decode error: %s\n", err)
+		log.Fatalf("exercises error: %s\n", err)
 	}
 	fmt.Printf("%q: {%d, %d}\n", q.Name, *q.X, *q.Y)
 }
