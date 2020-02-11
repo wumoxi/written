@@ -31,6 +31,7 @@
 #### [Golang『JSON数据格式』注意点](notice/GolangJSONDataFormat.md)
 #### [Golang『XML数据格式』注意点](notice/GolangXMLDataFormat.md)
 #### [Golang『用Gob传输数据』注意点](notice/GolangDataTransmissionThoughGob.md)
+#### [Golang『密码学』注意点](notice/GolangCryptography.md)
 
 ## 引用说明
 
