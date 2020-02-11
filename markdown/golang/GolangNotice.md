@@ -29,6 +29,7 @@
 #### [Golang『用切片读写文件』注意点](notice/GolangUseSliceReadWriteFile.md)
 #### [Golang『使用接口的实际例子：fmt.Fprintf』注意点](notice/GolangUseInterface.md)
 #### [Golang『JSON数据格式』注意点](notice/GolangJSONDataFormat.md)
+#### [Golang『XML数据格式』注意点](notice/GolangXMLDataFormat.md)
 
 ## 引用说明
 
