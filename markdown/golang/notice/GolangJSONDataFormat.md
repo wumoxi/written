@@ -15,7 +15,7 @@
 
 编码也是一样的，只是输出一个数据流（实现了 io.Writer 接口）；解码是从一个数据流（实现了 io.Reader）输出到一个数据结构。
 
-我们都比较熟悉 XML 格式(参阅 [12.10](https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/12.9.md))；但有些时候 JSON（JavaScript Object Notation，参阅 http://json.org）被作为首选，主要是由于其格式上非常简洁。通常 JSON 被用于 web 后端和浏览器之间的通讯，但是在其它场景也同样的有用。
+我们都比较熟悉 XML 格式(参阅 [12.10](https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/12.9.md))；但有些时候 JSON（JavaScript Object Notation，参阅 [http://json.org](http://json.org/)）被作为首选，主要是由于其格式上非常简洁。通常 JSON 被用于 web 后端和浏览器之间的通讯，但是在其它场景也同样的有用。
 
 这是一个简短的 JSON 片段：
 
