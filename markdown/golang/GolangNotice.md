@@ -33,6 +33,7 @@
 #### [Golang『用Gob传输数据』注意点](notice/GolangDataTransmissionThoughGob.md)
 #### [Golang『密码学』注意点](notice/GolangCryptography.md)
 #### [Golang『自定义包中的错误处理和panicking』注意点](notice/GolangCustomPackageErrorProcessing.md)
+#### [Golang『一种用闭包处理错误的模式』注意点](notice/GolangClosureModeProcessError.md)
 
 ## 引用说明
 
