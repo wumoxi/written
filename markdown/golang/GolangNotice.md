@@ -35,6 +35,7 @@
 #### [Golang『自定义包中的错误处理和panicking』注意点](notice/GolangCustomPackageErrorProcessing.md)
 #### [Golang『一种用闭包处理错误的模式』注意点](notice/GolangClosureModeProcessError.md)
 #### [Golang『启动外部命令和程序』注意点](notice/GolangStartExternalCommandAndProgram.md)
+#### [Golang『使用Select切换协程』注意点](notice/GolangUseSelectChangeChannel.md)
 
 ## 引用说明
 
