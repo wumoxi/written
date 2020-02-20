@@ -20,6 +20,8 @@
 
 ## 计算机基础
 
+### [OSI模型](https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B)
+### [TCP/IP协议族](https://zh.wikipedia.org/wiki/TCP/IP%E5%8D%8F%E8%AE%AE%E6%97%8F)
 ### [原码, 反码, 补码](https://www.cnblogs.com/zhangziqiu/archive/2011/03/30/ComputerCode.html)
 
 ## 计算机科学术语
