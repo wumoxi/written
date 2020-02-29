@@ -56,7 +56,7 @@
 ## Git
 
 ### [Git关于标签的操作](markdown/git/GitTagOperations.md)
-### [Mac检测远程服务端口是否可用](markdown/mac/CentOS7CheckRmoteServicePortAvailable.md)
+
 ## Nginx
 
 ### [Nginx添加SSH证书](https://certbot.eff.org/)
